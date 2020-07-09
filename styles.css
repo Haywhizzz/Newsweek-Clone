@@ -5,7 +5,7 @@
     margin-top: 1.5rem
 }
 
-.trump-one {
+.card-imgs {
     -ms-flex-negative: 0;
     flex-shrink: 0;
     width: 100%;
@@ -28,3 +28,4 @@ small.position-absolute {
     line-height: 22px;
     color: rgb(51, 51, 51);
 }
+
