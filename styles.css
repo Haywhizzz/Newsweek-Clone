@@ -57,3 +57,27 @@ p.debate-header {
     font-weight: 700;
     line-height: 21px;
 }
+
+.the-debate {
+    border-top: 4px solid red;
+    border-bottom: 4px solid blue;
+    border-left: none;
+    border-right: none;
+}
+
+.img-full-width {
+    width: 100%;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+    background-color: transparent;
+}
+
+.section-title {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 18px;
+    color: rgba(3, 3, 3, 0.4);
+}
