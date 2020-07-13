@@ -81,3 +81,69 @@ a {
     line-height: 18px;
     color: rgba(3, 3, 3, 0.4);
 }
+
+.bg-white {
+    background-color: #fff;
+    padding: 0 1em;
+}
+
+.row {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+
+div {
+    display: block;
+}
+
+.opinion {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.small-header,
+.more-stories {
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 21px;
+}
+
+.more-stories-border {
+    border-top: 1px solid #ddd;
+}
+
+small.culture {
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 20px;
+    color: black;
+    background-color: #c2d4d7;
+}
+
+.news-letter {
+    background: #f4f5f6;
+    padding: 2em;
+    margin-top: 2em;
+    width: 60%;
+}
+
+.news-letter button {
+    background: #f22213;
+}
+
+.news-letter img {
+    width: 10%;
+    height: 10%;
+}
