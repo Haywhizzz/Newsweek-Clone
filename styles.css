@@ -252,3 +252,22 @@ small.culture {
     color: black;
     margin-top: 1.5em;
 }
+
+.newsletter-content-button, .newsletter-content-input {
+    width: 53%;
+}
+.newsletter-main {
+    background-color: #f4f5f6;
+}
+
+.footer-header {
+    font-size: 3em;
+    font-weight: 700;
+    line-height: 18px;
+    color: red;
+}
+
+.small, small {
+    font-size: 80%;
+    font-weight: 400;
+}
