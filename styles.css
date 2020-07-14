@@ -63,6 +63,7 @@ p.debate-header {
     border-bottom: 4px solid blue;
     border-left: none;
     border-right: none;
+    width: 100vh;
 }
 
 .img-full-width {
@@ -87,6 +88,7 @@ a {
     padding: 0 1em;
 }
 
+
 .row {
     display: -ms-flexbox;
     display: flex;
@@ -94,6 +96,7 @@ a {
     flex-wrap: wrap;
     margin-right: -15px;
     margin-left: -15px;
+    width: 100vh;
 }
 
 * {
@@ -111,6 +114,10 @@ div {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
+}
+
+.opinion-parent {
+    width: 100vh;
 }
 
 .small-header,
@@ -144,6 +151,22 @@ small.culture {
 }
 
 .news-letter img {
-    width: 10%;
+    width: 20%;
     height: 10%;
+}
+
+.magazine-capture small:first-child {
+    padding: 5px 7px;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.magazine-capture small:last-child {
+    font-size: 20px;
+    font-weight: 700;
+    margin-left: 12px;
+}
+
+.magazine-capture {
+    margin-top: 10px;
 }
