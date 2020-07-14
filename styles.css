@@ -204,6 +204,7 @@ small.culture {
 
 .subscribe-main {
     background-color: #f4f5f6;
+    height: 400px;
 }
 
 .subscribe-content {
@@ -243,6 +244,7 @@ small.culture {
     font-weight: 700;
     line-height: 28px;
     color: black;
+    margin-top: 20px;
 }
 
 .newsletter-content-p {
@@ -258,6 +260,7 @@ small.culture {
 }
 .newsletter-main {
     background-color: #f4f5f6;
+    height: 400px;
 }
 
 .footer-header {
@@ -270,4 +273,21 @@ small.culture {
 .small, small {
     font-size: 80%;
     font-weight: 400;
+}
+
+.footer-link {
+    font-size: 14px;
+    line-height: 15px;
+    color: rgb(102, 102, 102);
+}
+
+body p, .footer-link, .footer-header {
+    font-family: Arial, Helvetica, sans-serif;
+}
+a {
+    text-decoration: none;
+}
+
+.px-2 {
+    list-style: none;
 }
