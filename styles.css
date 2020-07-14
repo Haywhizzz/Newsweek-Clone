@@ -170,3 +170,85 @@ small.culture {
 .magazine-capture {
     margin-top: 10px;
 }
+
+.segment-img {
+    width: 30%;
+    height: 30%;
+}
+
+.segment-text {
+    width: 70%;
+    float: right;
+    padding-left: 1em;
+    line-height: 1em;
+    font-weight: bold;
+    padding-top: 1.2em;
+}
+
+.segment-third {
+    width: 100%;
+    padding: 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.us-header {
+    font-weight: 900;
+    color: red;
+    padding-top: 10px;
+}
+
+.subscribe-content-img {
+    left: 5em;
+    top: 1em;
+}
+
+.subscribe-main {
+    background-color: #f4f5f6;
+}
+
+.subscribe-content {
+    max-width: 50%;
+    background-repeat: no-repeat;
+    background-image: url(https://d.newsweek.com/en/full/1603489/cover-july-03-2020.jpg?w=170&q=95&f=8446a36f196795281af9db53376bb9c9);
+}
+
+.subscribe-content-p1 {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 28px;
+    color: black;
+    bottom: 5.5em;
+    left: 5%;
+    right: 5%;
+}
+
+.subscribe-content-p2, .newsletter-content-p2 {
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 21px;
+    color: black;
+    margin-top: 1.5em;
+    max-width: 80%;
+}
+
+.subscribe-header, .newsletter-header {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 16px;
+    color: rgb(247, 34, 16);
+}
+
+.newsletter-content-h6 {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 28px;
+    color: black;
+}
+
+.newsletter-content-p {
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 21px;
+    color: black;
+    margin-top: 1.5em;
+}
