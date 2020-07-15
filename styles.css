@@ -14,16 +14,9 @@ nav {
   background-color: red;
 }
 
-.second-nav a,
-.nav-grey {
-  color: black;
-  font-weight: 700;
-  text-decoration: none;
-}
-
 .second-nav input {
-    margin: 3px 0;
-    border: none;
+  margin: 3px 0;
+  border: none;
 }
 
 .search::placeholder {
@@ -61,15 +54,11 @@ nav button {
   padding: 0 10px;
 }
 
-.brand-logo img {
-  width: 80%;
-}
-
 .brand-logo {
   width: 50%;
 }
 
-.fa-user:before {
+.fa-user::before {
   content: '\f007';
 }
 
@@ -138,11 +127,6 @@ small.position-absolute {
   margin-left: 0;
 }
 
-.debate-header a {
-  text-decoration: none;
-  color: black;
-}
-
 p.debate-header {
   font-family: 'Roboto Condensed', sans-serif;
   font-size: 14px;
@@ -171,11 +155,6 @@ p.debate-header {
   width: 100%;
 }
 
-.small-header a {
-  text-decoration: none;
-  color: black;
-}
-
 p.small-header {
   font-family: 'Roboto Condensed', sans-serif;
   font-size: 14px;
@@ -187,6 +166,23 @@ a {
   color: black;
   text-decoration: none;
   background-color: transparent;
+}
+
+.second-nav a,
+.nav-grey {
+  color: black;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.debate-header a {
+  text-decoration: none;
+  color: black;
+}
+
+.small-header a {
+  text-decoration: none;
+  color: black;
 }
 
 .section-title {
@@ -208,13 +204,6 @@ a {
   flex-wrap: wrap;
   margin-right: -15px;
   margin-left: -15px;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  outline: none;
 }
 
 div {
@@ -261,6 +250,12 @@ small.culture {
 .news-letter img {
   width: 20%;
   height: 10%;
+}
+
+.small,
+small {
+  font-size: 80%;
+  font-weight: 400;
 }
 
 .magazine-capture small:first-child {
@@ -369,6 +364,7 @@ small.culture {
 .newsletter-content-input {
   width: 53%;
 }
+
 .newsletter-main {
   background-color: #f4f5f6;
   height: 400px;
@@ -381,12 +377,6 @@ small.culture {
   color: red;
 }
 
-.small,
-small {
-  font-size: 80%;
-  font-weight: 400;
-}
-
 .footer-link {
   font-size: 14px;
   line-height: 15px;
@@ -397,9 +387,6 @@ body p,
 .footer-link,
 .footer-header {
   font-family: Arial, Helvetica, sans-serif;
-}
-a {
-  text-decoration: none;
 }
 
 .px-2 {
