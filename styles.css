@@ -1,17 +1,17 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    outline: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
 }
 
 body {
-    font-family: "Roboto Condensed", sans-serif;
-    background-color: #f4f5f6;
-  }
+  font-family: 'Roboto Condensed', sans-serif;
+  background-color: #f4f5f6;
+}
 
 nav {
-    background-color: red;
+  background-color: red;
 }
 
 .second-nav a,
@@ -21,33 +21,44 @@ nav {
   text-decoration: none;
 }
 
+.second-nav input {
+    margin: 3px 0;
+    border: none;
+}
 
+.search::placeholder {
+  background-image: url(./assets/img/search-solid.svg);
+  background-repeat: no-repeat;
+  background-position: right;
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+}
 
 ul {
-    list-style: none;
+  list-style: none;
 }
 
 .text-white {
-    color: #fff!important;
+  color: #fff !important;
 }
 
 .small-nav {
-    margin-bottom: -25px;
+  margin-bottom: -25px;
 }
 
 .brand-logo img {
-    width: 80%;
+  width: 80%;
 }
 
 nav button {
-    background-color: #ffe400;
-    color: black;
-    border-radius: 20px;
-    border: none;
-    align-items: center;
-    font-size: 16px;
-    font-weight: 700;
-    padding: 0 10px;
+  background-color: #ffe400;
+  color: black;
+  border-radius: 20px;
+  border: none;
+  align-items: center;
+  font-size: 16px;
+  font-weight: 700;
+  padding: 0 10px;
 }
 
 .brand-logo img {
@@ -59,12 +70,12 @@ nav button {
 }
 
 .fa-user:before {
-    content: "\f007";
+  content: '\f007';
 }
 
 .nav-link {
-    display: block;
-    padding: .5rem 1rem;
+  display: block;
+  padding: 0.5rem 1rem;
 }
 
 .nav-item {
@@ -75,151 +86,147 @@ nav button {
 }
 
 nav .weather {
-    color: white;
-    font-weight: 600;
-    font-size: 20px;
+  color: white;
+  font-weight: 600;
+  font-size: 20px;
 }
 
 .top-title {
-    color: #03030366;
-    margin-top: 1.5rem
+  color: #03030366;
+  margin-top: 1.5rem;
 }
 
 .card-imgs {
-    -ms-flex-negative: 0;
-    flex-shrink: 0;
-    width: 100%;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  width: 100%;
 }
 
 small.position-absolute {
-    bottom: 0;
-    left: 0;
-    background-color: #f4f5f6;
-    font-size: 18px;
-    line-height: 18px;
-    font-weight: 600;
-    color: rgb(247, 34, 16);
+  bottom: 0;
+  left: 0;
+  background-color: #f4f5f6;
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: 600;
+  color: rgb(247, 34, 16);
 }
 
 .top-card-text {
-    font-size: 16px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: 400;
-    line-height: 22px;
-    color: rgb(51, 51, 51);
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  line-height: 22px;
+  color: rgb(51, 51, 51);
 }
 
 .debate-vs {
-    border-top: 2px double grey;
+  border-top: 2px double grey;
 }
 
 .debate-vs span {
-    left: 50%;
-    top: -20px;
-    background-color: black;
-    border-radius: 50%;
-    color: #f4f5f6;
-    padding: 5px 8px;
+  left: 50%;
+  top: -20px;
+  background-color: black;
+  border-radius: 50%;
+  color: #f4f5f6;
+  padding: 5px 8px;
 }
 
 .no-gutters {
-    margin-right: 0;
-    margin-left: 0;
+  margin-right: 0;
+  margin-left: 0;
 }
 
 .debate-header a {
-    text-decoration: none;
-    color: black;
+  text-decoration: none;
+  color: black;
 }
 
 p.debate-header {
-    font-family: "Roboto Condensed", sans-serif;
-    font-size: 14px;
-    font-weight: 700;
-    line-height: 21px;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 21px;
 }
 
 .debate-header {
-    font-size: 17px;
-    font-weight: 700;
-    line-height: 21px;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 21px;
 }
 
 .the-debate {
-    margin: 0 !important;
-  }
-
+  margin: 0 !important;
+}
 
 .debate {
-    border-top: 4px solid red;
-    border-bottom: 4px solid blue;
-    border-left: none;
-    border-right: none;
+  border-top: 4px solid red;
+  border-bottom: 4px solid blue;
+  border-left: none;
+  border-right: none;
 }
 
 .img-full-width {
-    width: 100%;
+  width: 100%;
 }
 
 .small-header a {
-    text-decoration: none;
-    color: black;
+  text-decoration: none;
+  color: black;
 }
 
-
 p.small-header {
-    font-family: "Roboto Condensed", sans-serif;
-    font-size: 14px;
-    font-weight: 700;
-    line-height: 21px;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 21px;
 }
 
 a {
-    color: black;
-    text-decoration: none;
-    background-color: transparent;
+  color: black;
+  text-decoration: none;
+  background-color: transparent;
 }
 
 .section-title {
-    font-size: 16px;
-    font-weight: 700;
-    line-height: 18px;
-    color: rgba(3, 3, 3, 0.4);
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 18px;
+  color: rgba(3, 3, 3, 0.4);
 }
 
 .bg-white {
-    background-color: #fff;
-    padding: 0 1em;
+  background-color: #fff;
+  padding: 0 1em;
 }
 
-
 .row {
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    margin-right: -15px;
-    margin-left: -15px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
 }
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    outline: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
 }
 
 div {
-    display: block;
+  display: block;
 }
 
 .opinion {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    border-bottom: 1px solid #ddd;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  border-bottom: 1px solid #ddd;
 }
-
 
 .small-header,
 .more-stories {
@@ -229,168 +236,174 @@ div {
 }
 
 .more-stories-border {
-    border-top: 1px solid #ddd;
+  border-top: 1px solid #ddd;
 }
 
 small.culture {
-    font-size: 13px;
-    font-weight: 700;
-    line-height: 20px;
-    color: black;
-    background-color: #c2d4d7;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 20px;
+  color: black;
+  background-color: #c2d4d7;
 }
 
 .news-letter {
-    background: #f4f5f6;
-    padding: 2em;
-    margin-top: 2em;
-    width: 60%;
+  background: #f4f5f6;
+  padding: 2em;
+  margin-top: 2em;
+  width: 60%;
 }
 
 .news-letter button {
-    background: #f22213;
+  background: #f22213;
 }
 
 .news-letter img {
-    width: 20%;
-    height: 10%;
+  width: 20%;
+  height: 10%;
 }
 
 .magazine-capture small:first-child {
-    padding: 5px 7px;
-    font-size: 20px;
-    font-weight: 700;
+  padding: 5px 7px;
+  font-size: 20px;
+  font-weight: 700;
 }
 
 .magazine-capture small:last-child {
-    font-size: 20px;
-    font-weight: 700;
-    margin-left: 12px;
+  font-size: 20px;
+  font-weight: 700;
+  margin-left: 12px;
 }
 
 .magazine-capture {
-    margin-top: 10px;
+  margin-top: 10px;
 }
 
 .segment-img {
-    width: 30%;
-    height: 30%;
+  width: 30%;
+  height: 30%;
 }
 
 .segment-text {
-    width: 70%;
-    float: right;
-    padding-left: 1em;
-    line-height: 1em;
-    font-weight: bold;
-    padding-top: 1.2em;
+  width: 70%;
+  float: right;
+  padding-left: 1em;
+  line-height: 1em;
+  font-weight: bold;
+  padding-top: 1.2em;
 }
 
 .segment-third {
-    width: 100%;
-    padding: 0;
-    border-bottom: 1px solid #ddd;
+  width: 100%;
+  padding: 0;
+  border-bottom: 1px solid #ddd;
 }
 
 .us-header {
-    font-weight: 900;
-    color: red;
-    padding-top: 10px;
+  font-weight: 900;
+  color: red;
+  padding-top: 10px;
 }
 
 .subscribe-content-img {
-    left: 5em;
-    top: 1em;
+  left: 5em;
+  top: 1em;
 }
 
 .subscribe-main {
-    background-color: #f4f5f6;
-    height: 400px;
+  background-color: #f4f5f6;
+  height: 400px;
 }
 
 .subscribe-content {
-    max-width: 50%;
-    background-repeat: no-repeat;
-    background-image: url(https://d.newsweek.com/en/full/1603489/cover-july-03-2020.jpg?w=170&q=95&f=8446a36f196795281af9db53376bb9c9);
+  max-width: 50%;
+  background-repeat: no-repeat;
+  background-image: url(https://d.newsweek.com/en/full/1603489/cover-july-03-2020.jpg?w=170&q=95&f=8446a36f196795281af9db53376bb9c9);
 }
 
 .subscribe-content-p1 {
-    font-size: 20px;
-    font-weight: 700;
-    line-height: 28px;
-    color: black;
-    bottom: 5.5em;
-    left: 5%;
-    right: 5%;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 28px;
+  color: black;
+  bottom: 5.5em;
+  left: 5%;
+  right: 5%;
 }
 
-.subscribe-content-p2, .newsletter-content-p2 {
-    font-size: 15px;
-    font-weight: 300;
-    line-height: 21px;
-    color: black;
-    margin-top: 1.5em;
-    max-width: 80%;
+.subscribe-content-p2,
+.newsletter-content-p2 {
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 21px;
+  color: black;
+  margin-top: 1.5em;
+  max-width: 80%;
 }
 
-.subscribe-header, .newsletter-header {
-    font-size: 16px;
-    font-weight: 700;
-    line-height: 16px;
-    color: rgb(247, 34, 16);
+.subscribe-header,
+.newsletter-header {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 16px;
+  color: rgb(247, 34, 16);
 }
 
 .newsletter-content-h6 {
-    font-size: 20px;
-    font-weight: 700;
-    line-height: 28px;
-    color: black;
-    margin-top: 20px;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 28px;
+  color: black;
+  margin-top: 20px;
 }
 
 .newsletter-content-p {
-    font-size: 15px;
-    font-weight: 300;
-    line-height: 21px;
-    color: black;
-    margin-top: 1.5em;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 21px;
+  color: black;
+  margin-top: 1.5em;
 }
 
-.newsletter-content-button, .newsletter-content-input {
-    width: 53%;
+.newsletter-content-button,
+.newsletter-content-input {
+  width: 53%;
 }
 .newsletter-main {
-    background-color: #f4f5f6;
-    height: 400px;
+  background-color: #f4f5f6;
+  height: 400px;
 }
 
 .footer-header {
-    font-size: 3em;
-    font-weight: 700;
-    line-height: 18px;
-    color: red;
+  font-size: 3em;
+  font-weight: 700;
+  line-height: 18px;
+  color: red;
 }
 
-.small, small {
-    font-size: 80%;
-    font-weight: 400;
+.small,
+small {
+  font-size: 80%;
+  font-weight: 400;
 }
 
 .footer-link {
-    font-size: 14px;
-    line-height: 15px;
-    color: rgb(102, 102, 102);
+  font-size: 14px;
+  line-height: 15px;
+  color: rgb(102, 102, 102);
 }
 
-body p, .footer-link, .footer-header {
-    font-family: Arial, Helvetica, sans-serif;
+body p,
+.footer-link,
+.footer-header {
+  font-family: Arial, Helvetica, sans-serif;
 }
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 .px-2 {
-    list-style: none;
+  list-style: none;
 }
 
 @media screen and (min-width: 992px) {
