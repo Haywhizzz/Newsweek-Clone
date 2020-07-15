@@ -1,7 +1,7 @@
 # Newsweek-Clone
 I am creating a clone of the newsweek website using bootstrap
 
-![screenshot](./assests/img/screenshot.png)
+![screenshot](./assets/img/screenshot.png)
 
 **This is a clone of The Newsweek website**
 
