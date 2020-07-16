@@ -10,6 +10,18 @@ body {
   background-color: #f4f5f6;
 }
 
+.navbar {
+  height: 60px;
+}
+
+.bottom-nav {
+  margin-top: 20px;
+}
+
+.fa-cloud-rain {
+  margin-top: 20px;
+}
+
 nav {
   background-color: red;
 }
@@ -40,7 +52,7 @@ ul {
 }
 
 .brand-logo img {
-  width: 80%;
+  width: 50%;
 }
 
 nav button {
@@ -277,6 +289,7 @@ small {
 .segment-img {
   width: 30%;
   height: 30%;
+  margin-top: 16px;
 }
 
 .segment-text {
@@ -326,6 +339,11 @@ small {
   right: 5%;
 }
 
+.subscribe-content1 {
+  background-repeat: no-repeat;
+  background-image: url("https://d.newsweek.com/en/full/1596252/cover-june-12-2020.jpg?w=170&q=95&f=fdda5cadbe8011b01a2d540d06703b6e");
+}
+
 .subscribe-content-p2,
 .newsletter-content-p2 {
   font-size: 15px;
@@ -334,6 +352,14 @@ small {
   color: black;
   margin-top: 1.5em;
   max-width: 80%;
+}
+
+.subscribe-content-p3 {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28px;
+  color: black;
+  font-family: "Roboto Condensed", sans-serif;
 }
 
 .subscribe-header,
@@ -405,6 +431,10 @@ body p,
     margin: 0 auto;
   }
 
+  .navbar{
+    height: 120px;
+  }
+
   .brand-logo {
     width: 300px;
   }
@@ -436,6 +466,10 @@ body p,
   .height-100 {
     height: 100%;
   }
+
+  .subscribe-newsletter {
+  display: flex;
+}
 }
 
 @media screen and (min-width: 1200px) {
