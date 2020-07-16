@@ -166,6 +166,8 @@ p.debate-header {
   border-bottom: 4px solid blue;
   border-left: none;
   border-right: none;
+  margin-right: 15px;
+  margin-left: 15px;
 }
 
 .img-full-width {
@@ -228,10 +230,8 @@ div {
 }
 
 .opinion {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  border-bottom: 1px solid #ddd;
+  margin-left: 15px;
+  margin-right: 15px;
 }
 
 .small-header,
@@ -405,11 +405,31 @@ small {
   height: 400px;
 }
 
-.footer-header {
-  font-size: 3em;
+.start {
+  background-color: #f4f5f6;
+  padding: 25px;
+}
+
+.features {
+  color: solid black;
   font-weight: 700;
-  line-height: 18px;
-  color: red;
+  font-size: 17px;
+  text-align: center;
+}
+
+.issue {
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 20px;
+  color: black;
+  background-color: #c2d4d7;
+  margin-top: -28px;
+}
+
+.footer-logo {
+    width: 236px;
+    fill: red;
+    height: 35px;
 }
 
 .footer-link {
@@ -443,6 +463,7 @@ body p,
 
   .the-debate {
     margin: 0 !important;
+
   }
 
   .newsletter-content-button,
