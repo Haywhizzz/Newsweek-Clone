@@ -14,6 +14,10 @@ body {
   height: 60px;
 }
 
+.navbar-brand {
+    margin-right: 0;
+  }
+
 .bottom-nav {
   margin-top: 20px;
 }
@@ -67,7 +71,7 @@ nav button {
 }
 
 .brand-logo {
-  width: 50%;
+  width: 100px;
 }
 
 .fa-user::before {
@@ -378,6 +382,10 @@ small {
   margin-top: 20px;
 }
 
+.img-full-height {
+  height: 100%;
+}
+
 .newsletter-content-p {
   font-size: 15px;
   font-weight: 300;
@@ -483,7 +491,7 @@ body p,
   }
 
   .newsletter-lg {
-    height: 87%;
+    height: 89%;
   }
 
   .height-100 {
