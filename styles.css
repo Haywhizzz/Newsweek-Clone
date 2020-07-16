@@ -427,9 +427,9 @@ small {
 }
 
 .footer-logo {
-    width: 236px;
-    fill: red;
-    height: 35px;
+  width: 236px;
+  fill: red;
+  height: 35px;
 }
 
 .footer-link {
@@ -463,7 +463,6 @@ body p,
 
   .the-debate {
     margin: 0 !important;
-
   }
 
   .newsletter-content-button,
