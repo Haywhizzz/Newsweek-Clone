@@ -1,1474 +1,2091 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
 
-<head>
-  <!-- Required meta tags -->
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
 
-  <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
-    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <!-- Font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.13.0/css/all.css"
+      integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V"
+      crossorigin="anonymous"
+    />
 
+    <!-- Google font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
 
-  <!-- Font awesome -->
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css"
-    integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V" crossorigin="anonymous" />
+    <title>NewsWeek</title>
+  </head>
 
-  <!-- Google font -->
-  <link
-    href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
-    rel="stylesheet" />
-  <link rel="stylesheet" href="styles.css" />
-  
-  <title>NewsWeek</title>
-</head>
+  <body>
+    <nav
+      class="navbar d-none d-flex justify-content-between navbar-expand-lg navbar-light"
+    >
+      <div class="weather ml-4 d-none d-lg-block">
+        <p>
+          <i class="fas fa-cloud-rain"></i>
+          27° Lagos, NG
+        </p>
+        <p>Mon, Jul 12, 2020</p>
+      </div>
+      <div class="brand-logo">
+        <a class="navbar-brand" href="#">
+          <img src="./assets/img/Newsweek_Logo.png" alt="" />
+        </a>
+      </div>
+      <div class="navbar-nav ml-auto small-nav d-lg-none">
+        <ul class="d-flex">
+          <li>
+            <a class="nav-item nav-link text-white" href="#">
+              <i class="fa fa-user"></i>
+            </a>
+          </li>
+          <li>
+            <button>
+              SUBSCRIBE
+              <i class="fa fa-chevron-right"></i>
+            </button>
+          </li>
+        </ul>
+      </div>
+      <div class="align-self-lg-end mb-3">
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav ml-auto">
+            <a class="nav-item nav-link text-white" href="#">LOGIN</a>
+            <button>
+              SUBSCRIBE
+              <i class="fa fa-chevron-right"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </nav>
 
-<body>
-  <nav class="navbar d-none d-flex justify-content-between navbar-expand-lg navbar-light">
-    <div class="weather ml-4 d-none d-lg-block">
-      <p><i class="fas fa-cloud-rain"></i> 27° Lagos, NG</p>
-      <p>Mon, Jul 12, 2020</p>
-    </div>
-    <div class="brand-logo">
-      <a class="navbar-brand" href="#"><img src="./assets/img/Newsweek_Logo.png" alt="" /></a>
-    </div>
-    <div class="navbar-nav ml-auto small-nav d-lg-none">
-      <ul class="d-flex">
+    <div class="bg-white d-none d-lg-block second-nav">
+      <ul class="d-flex bottom-nav justify-content-between">
+        <li><a href="">U.S.</a></li>
+        <li class="nav-grey d-none d-md-block">&verbar;</li>
+        <li><a href="">World</a></li>
+        <li class="nav-grey d-none d-md-block">&verbar;</li>
+        <li><a href="">Business</a></li>
+        <li class="nav-grey d-none d-md-block">&verbar;</li>
+        <li><a href="">Tech & Science</a></li>
+        <li class="nav-grey d-none d-md-block">&verbar;</li>
+        <li><a href="">Culture</a></li>
+        <li class="nav-grey d-none d-md-block">&verbar;</li>
+        <li><a href="">Newsgeek</a></li>
+        <li class="nav-grey d-none d-md-block">&verbar;</li>
+        <li><a href="">Sports</a></li>
+        <li class="nav-grey d-none d-md-block">&verbar;</li>
+        <li><a href="">Health</a></li>
+        <li class="nav-grey d-none d-md-block">&verbar;</li>
+        <li><a href="">The Debate</a></li>
+        <li class="nav-grey d-none d-md-block">&verbar;</li>
+        <li><a href="">Vantage</a></li>
+        <li class="nav-grey d-none d-md-block">&verbar;</li>
+        <li><a href="">Weather</a></li>
         <li>
-          <a class="nav-item nav-link text-white" href="#"><i class="fa fa-user"></i></a>
-        </li>
-        <li>
-          <button>SUBSCRIBE <i class="fa fa-chevron-right"></i>
-          </button>
+          <input class="search" type="search" placeholder="Search" />
         </li>
       </ul>
     </div>
-    <div class="align-self-lg-end mb-3">
-      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-        <div class="navbar-nav ml-auto">
-          <a class="nav-item nav-link text-white" href="#">LOGIN</a>
-          <button>SUBSCRIBE <i class="fa fa-chevron-right"></i>
-          </button>
-        </div>
-      </div>
-    </div>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
-      aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-  </nav>
+    <main>
+      <div class="container-fluid">
+        <section class="row">
+          <!-- Top stories div -->
+          <div class="bg-white col-md-7 mt-2 mt-lg-n2 top-story col-lg-5">
+            <h5 class="section-title mt-4">TOP STORY</h5>
+            <div class="card border-0">
+              <a href="#" class="position-relative">
+                <img
+                  src="https://d.newsweek.com/en/full/1609117/donald-trump.webp?w=591&h=364&f=1c4043bdb77c9ae291f9e214d0cd1e6b"
+                  alt=""
+                  class="card-img-top"
+                />
+                <small class="position-absolute py-2 px-3">U.S.</small>
+              </a>
+              <div>
+                <h3 class="card-title mt-2">
+                  <a href="">
+                    Trump Says He Launched 'Fastest Economic Comeback in
+                    History' But Did He?
+                  </a>
+                </h3>
+                <p class="card-text pb-4">
+                  "I created the greatest economy we've ever had. And now, we're
+                  creating it again," Trump said last week.
+                </p>
+              </div>
+            </div>
 
-<div class="bg-white d-none d-lg-block second-nav">
-  <ul class="d-flex bottom-nav justify-content-between">
-    <li><a href="">U.S.</a></li>
-    <li class="nav-grey d-none d-md-block">&verbar;</li>
-    <li><a href="">World</a></li>
-    <li class="nav-grey d-none d-md-block">&verbar;</li>
-    <li><a href="">Business</a></li>
-    <li class="nav-grey d-none d-md-block">&verbar;</li>
-    <li><a href="">Tech & Science</a></li>
-    <li class="nav-grey d-none d-md-block">&verbar;</li>
-    <li><a href="">Culture</a></li>
-    <li class="nav-grey d-none d-md-block">&verbar;</li>
-    <li><a href="">Newsgeek</a></li>
-    <li class="nav-grey d-none d-md-block">&verbar;</li>
-    <li><a href="">Sports</a></li>
-    <li class="nav-grey d-none d-md-block">&verbar;</li>
-    <li><a href="">Health</a></li>
-    <li class="nav-grey d-none d-md-block">&verbar;</li>
-    <li><a href="">The Debate</a></li>
-    <li class="nav-grey d-none d-md-block">&verbar;</li>
-    <li><a href="">Vantage</a></li>
-    <li class="nav-grey d-none d-md-block">&verbar;</li>
-    <li><a href="">Weather</a></li>
-    <li>
-      <input class="search" type="search" placeholder="Search" />
-    </li>
-  </ul>
-</div>
-<main>
-  <div class="container-fluid">
-  
-    <section class="row">
-  
-      <!-- featured stories div -->
-      <div class="bg-white mt-2 mt-lg-n2 col-md-5 featured-stories col-lg-3">
-        <h5 class="section-title mt-4">FEATURED STORIES</h5>
-        <div class="card border-0">
-          <a href="#" class="position-relative">
-            <img
-              src="https://d.newsweek.com/en/full/1603025/donald-trump-200-judges.webp?w=397&h=265&q=90&f=2be5b1fad49019a9a9c879b0c787d3cb"
-              alt="" class="card-img-top" />
-            <small class="position-absolute py-2 px-3">U.S.</small>
-          </a>
-          <div>
-            <h3 class="card-title mt-2">
-              <a href="">Trump's Impact on Courts Cemented As 200th Judge Appointed
-                to Federal Bench</a>
-            </h3>
-            <p class="card-text pb-4">
-              "No modern president has had this level of impact on the
-              composition of the federal courts," said Jonathan Turley, a
-              constitutional law professor at George Washington University.
-            </p>
-          </div>
-        </div>
-        <div class="card border-0">
-          <a href="#" class="position-relative">
-            <img
-              src="https://d.newsweek.com/en/full/1602312/seattle-protest-zone.jpg?w=591&h=364&f=787ca4fe70bb1481d853d412f0c20782"
-              alt="" class="card-img-top" />
-            <small class="position-absolute py-2 px-3">NEWS</small>
-          </a>
-          <div>
-            <h3 class="card-title mt-2">
-              <a href="">Seattle to Crack Down on Protesters Occupying Capitol Hill
-                After Shootings</a>
-            </h3>
-            <p class="card-text pb-4">
-              Seattle Mayor Jenny Durkan announced plans that could lead to
-              the dismantling of the city's Capitol Hill Occupied Protest,
-              or CHOP, on Monday.
-            </p>
-          </div>
-        </div>
-        <div class="card border-0">
-          <a href="#" class="position-relative">
-            <img
-              src="https://d.newsweek.com/en/full/1602312/seattle-protest-zone.jpg?w=591&h=364&f=787ca4fe70bb1481d853d412f0c20782"
-              alt="" class="card-img-top" />
-            <small class="position-absolute py-2 px-3">NEWS</small>
-          </a>
-          <div>
-            <h3 class="card-title mt-2">
-              <a href="">Seattle to Crack Down on Protesters Occupying Capitol Hill
-                After Shootings</a>
-            </h3>
-            <p class="card-text pb-4">
-              Seattle Mayor Jenny Durkan announced plans that could lead to
-              the dismantling of the city's Capitol Hill Occupied Protest,
-              or CHOP, on Monday.
-            </p>
-          </div>
-        </div>
-        <div class="card border-0">
-          <a href="#" class="position-relative">
-            <img
-              src="https://d.newsweek.com/en/full/1602312/seattle-protest-zone.jpg?w=591&h=364&f=787ca4fe70bb1481d853d412f0c20782"
-              alt="" class="card-img-top" />
-            <small class="position-absolute py-2 px-3">NEWS</small>
-          </a>
-          <div>
-            <h3 class="card-title mt-2">
-              <a href="">Seattle to Crack Down on Protesters Occupying Capitol Hill
-                After Shootings</a>
-            </h3>
-            <p class="card-text pb-4">
-              Seattle Mayor Jenny Durkan announced plans that could lead to
-              the dismantling of the city's Capitol Hill Occupied Protest,
-              or CHOP, on Monday.
-            </p>
-          </div>
-        </div>
-        <div class="card border-0">
-          <a href="#" class="position-relative">
-            <img
-              src="https://d.newsweek.com/en/full/1602312/seattle-protest-zone.jpg?w=591&h=364&f=787ca4fe70bb1481d853d412f0c20782"
-              alt="" class="card-img-top" />
-            <small class="position-absolute py-2 px-3">NEWS</small>
-          </a>
-          <div>
-            <h3 class="card-title mt-2">
-              <a href="">Seattle to Crack Down on Protesters Occupying Capitol Hill
-                After Shootings</a>
-            </h3>
-            <p class="card-text pb-4">
-              Seattle Mayor Jenny Durkan announced plans that could lead to
-              the dismantling of the city's Capitol Hill Occupied Protest,
-              or CHOP, on Monday.
-            </p>
-          </div>
-        </div>
-  
-  
-      </div>
-  
-      <!-- Top stories div -->
-      <div class="bg-white col-md-7 mt-2 mt-lg-n2 top-story col-lg-5">
-        <h5 class="section-title mt-4">TOP STORY</h5>
-        <div class="card border-0">
-          <a href="#" class="position-relative">
-            <img
-              src="https://d.newsweek.com/en/full/1609117/donald-trump.webp?w=591&h=364&f=1c4043bdb77c9ae291f9e214d0cd1e6b"
-              alt="" class="card-img-top" />
-            <small class="position-absolute py-2 px-3">U.S.</small>
-          </a>
-          <div>
-            <h3 class="card-title mt-2">
-              <a href="">Trump Says He Launched 'Fastest Economic Comeback in History' But Did He?</a>
-            </h3>
-            <p class="card-text pb-4">
-              "I created the greatest economy we've ever had. And now, we're creating it again," Trump said last week.
-            </p>
-          </div>
-        </div>
-  
-        <!-- top stories add content on medium screen -->
-        <div class="d-none d-md-block">
-          <!-- my turn -->
-          <div class="row px-3">
-            <h5 class="section-title mt-4">MY TURN</h5>
-            <div class="row">
-              <div class="col-md-4">
-                <a href="">
-                  <img
-                    src="https://d.newsweek.com/en/full/1608760/pregnancy-miscarriage-women-motherhood.webp?w=397&h=397&f=2fa19066da051dfbf9837444de7d48b7"
-                    alt="" class="img-full-width" />
-                </a>
-                <h5 class="section-title my-3">
-                  'I Suffered Two Miscarriages in a Row Within a Year'
-                </h5>
-              </div>
-              <div class="col-md-4">
-                <a href="">
-                  <img
-                    src="https://d.newsweek.com/en/full/1608714/harvard-law-law-school-university-studying.webp?w=397&h=397&f=f89bf7c34d412b1197d0bbc6cd9aad6a"
-                    alt="" class="img-full-width" />
-                </a>
-                <h5 class="section-title my-3">
-                  'I'm a Single Mom, This Is Why I Dread Father's Day'
-                </h5>
-              </div>
-              <div class="col-md-4">
-                <a href="">
-                  <img
-                    src="https://d.newsweek.com/en/full/1608714/harvard-law-law-school-university-studying.webp?w=397&h=397&f=f89bf7c34d412b1197d0bbc6cd9aad6a"
-                    alt="" class="img-full-width" />
-                </a>
-                <h5 class="section-title my-3">
-                  'I Suffered Two Miscarriages in a Row Within a Year'
-                </h5>
-              </div>
-            </div>
-          </div>
-  
-          <!-- Culture and travel -->
-          <div class="row px-3">
-            <h5 class="section-title mt-4">CULTURE & TRAVEL</h5>
-            <div class="row">
-              <div class="col-md-4">
-                <div class="card border-0">
-                  <a href="#" class="position-relative">
-                    <img
-                      src="https://d.newsweek.com/en/full/1601757/racism-fathers-day-black-lives-matter-father.jpg?w=397&h=397&f=a558e40ae45f8c6df39831cfe21ce8f7"
-                      alt="" class="card-img-top" />
-                    <small class="position-absolute py-1 px-1 culture">CORONAVIRUS</small>
-                  </a>
-                  <h5 class="section-title my-3">
-                    'I Am A Black Father, It's Impossible to Prepare Your
-                    Kids For Racism'
-                  </h5>
+            <!-- top stories add content on medium screen -->
+            <div class="d-none d-md-block">
+              <!-- my turn -->
+              <div class="row px-3">
+                <h5 class="section-title mt-4">MY TURN</h5>
+                <div class="row">
+                  <div class="col-md-4">
+                    <a href="">
+                      <img
+                        src="https://d.newsweek.com/en/full/1608760/pregnancy-miscarriage-women-motherhood.webp?w=397&h=397&f=2fa19066da051dfbf9837444de7d48b7"
+                        alt=""
+                        class="img-full-width"
+                      />
+                    </a>
+                    <h5 class="section-title my-3">
+                      'I Suffered Two Miscarriages in a Row Within a Year'
+                    </h5>
+                  </div>
+                  <div class="col-md-4">
+                    <a href="">
+                      <img
+                        src="https://d.newsweek.com/en/full/1608714/harvard-law-law-school-university-studying.webp?w=397&h=397&f=f89bf7c34d412b1197d0bbc6cd9aad6a"
+                        alt=""
+                        class="img-full-width"
+                      />
+                    </a>
+                    <h5 class="section-title my-3">
+                      'I'm a Single Mom, This Is Why I Dread Father's Day'
+                    </h5>
+                  </div>
+                  <div class="col-md-4">
+                    <a href="">
+                      <img
+                        src="https://d.newsweek.com/en/full/1608714/harvard-law-law-school-university-studying.webp?w=397&h=397&f=f89bf7c34d412b1197d0bbc6cd9aad6a"
+                        alt=""
+                        class="img-full-width"
+                      />
+                    </a>
+                    <h5 class="section-title my-3">
+                      'I Suffered Two Miscarriages in a Row Within a Year'
+                    </h5>
+                  </div>
                 </div>
               </div>
-              <div class="col-md-4">
-                <div class="card border-0">
-                  <a href="#" class="position-relative">
-                    <img
-                      src="https://d.newsweek.com/en/full/1601757/racism-fathers-day-black-lives-matter-father.jpg?w=397&h=397&f=a558e40ae45f8c6df39831cfe21ce8f7"
-                      alt="" class="card-img-top" />
-                    <small class="position-absolute py-1 px-1 culture">CORONAVIRUS</small>
-                  </a>
-                  <h5 class="section-title my-3">
-                    'I Am A Black Father, It's Impossible to Prepare Your
-                    Kids For Racism'
-                  </h5>
+
+              <!-- Culture and travel -->
+              <div class="row px-3">
+                <h5 class="section-title mt-4">CULTURE & TRAVEL</h5>
+                <div class="row">
+                  <div class="col-md-4">
+                    <div class="card border-0">
+                      <a href="#" class="position-relative">
+                        <img
+                          src="https://d.newsweek.com/en/full/1601757/racism-fathers-day-black-lives-matter-father.jpg?w=397&h=397&f=a558e40ae45f8c6df39831cfe21ce8f7"
+                          alt=""
+                          class="card-img-top"
+                        />
+                        <small class="position-absolute py-1 px-1 culture">
+                          CORONAVIRUS
+                        </small>
+                      </a>
+                      <h5 class="section-title my-3">
+                        'I Am A Black Father, It's Impossible to Prepare Your
+                        Kids For Racism'
+                      </h5>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="card border-0">
+                      <a href="#" class="position-relative">
+                        <img
+                          src="https://d.newsweek.com/en/full/1601757/racism-fathers-day-black-lives-matter-father.jpg?w=397&h=397&f=a558e40ae45f8c6df39831cfe21ce8f7"
+                          alt=""
+                          class="card-img-top"
+                        />
+                        <small class="position-absolute py-1 px-1 culture">
+                          CORONAVIRUS
+                        </small>
+                      </a>
+                      <h5 class="section-title my-3">
+                        'I Am A Black Father, It's Impossible to Prepare Your
+                        Kids For Racism'
+                      </h5>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="card border-0">
+                      <a href="#" class="position-relative">
+                        <img
+                          src="https://d.newsweek.com/en/full/1601757/racism-fathers-day-black-lives-matter-father.jpg?w=397&h=397&f=a558e40ae45f8c6df39831cfe21ce8f7"
+                          alt=""
+                          class="card-img-top"
+                        />
+                        <small class="position-absolute py-1 px-1 culture">
+                          CORONAVIRUS
+                        </small>
+                      </a>
+                      <h5 class="section-title my-3">
+                        'I Am A Black Father, It's Impossible to Prepare Your
+                        Kids For Racism'
+                      </h5>
+                    </div>
+                  </div>
                 </div>
               </div>
-              <div class="col-md-4">
-                <div class="card border-0">
-                  <a href="#" class="position-relative">
-                    <img
-                      src="https://d.newsweek.com/en/full/1601757/racism-fathers-day-black-lives-matter-father.jpg?w=397&h=397&f=a558e40ae45f8c6df39831cfe21ce8f7"
-                      alt="" class="card-img-top" />
-                    <small class="position-absolute py-1 px-1 culture">CORONAVIRUS</small>
-                  </a>
-                  <h5 class="section-title my-3">
-                    'I Am A Black Father, It's Impossible to Prepare Your
-                    Kids For Racism'
-                  </h5>
+
+              <!-- more stories -->
+              <div class="row px-3">
+                <h5 class="section-title mt-4">MORE STORIES</h5>
+                <div class="more-stories-border pt-3">
+                  <img
+                    src="https://d.newsweek.com/en/full/1602359/5g-mast-getty.jpg?w=95&h=95&f=991ddbe654347cd88e44c0c2787b98ed"
+                    alt=""
+                    class="float-left pr-3"
+                  />
+                  <div>
+                    <h3 class="mt-2 more-stories">
+                      <a href="">
+                        Seattle to Crack Down on Protesters Occupying Capitol
+                        Hill After Shootings
+                      </a>
+                    </h3>
+                    <p class="card-text pb-3">
+                      A growing number of colleges and universities, including
+                      elites like Brown and Georgetown along with major public
+                      school systems, are being sued by students dissatisfied
+                      with their pandemic online learning experience who now
+                      want at least part of their tuition money back.
+                    </p>
+                  </div>
+                </div>
+                <div class="more-stories-border pt-3">
+                  <img
+                    src="https://d.newsweek.com/en/full/1602359/5g-mast-getty.jpg?w=95&h=95&f=991ddbe654347cd88e44c0c2787b98ed"
+                    alt=""
+                    class="float-left pr-3"
+                  />
+                  <div>
+                    <h3 class="mt-2 more-stories">
+                      <a href="">
+                        Seattle to Crack Down on Protesters Occupying Capitol
+                        Hill After Shootings
+                      </a>
+                    </h3>
+                    <p class="card-text pb-3">
+                      Houston Police Chief Art Acevedo said no-one was injured
+                      in the attack on Southeast Houston police station.
+                    </p>
+                  </div>
+                </div>
+                <div class="more-stories-border pt-3">
+                  <img
+                    src="https://d.newsweek.com/en/full/1602359/5g-mast-getty.jpg?w=95&h=95&f=991ddbe654347cd88e44c0c2787b98ed"
+                    alt=""
+                    class="float-left pr-3"
+                  />
+                  <div>
+                    <h3 class="mt-2 more-stories">
+                      <a href="">
+                        Seattle to Crack Down on Protesters Occupying Capitol
+                        Hill After Shootings
+                      </a>
+                    </h3>
+                    <p class="card-text pb-3">
+                      A growing number of colleges and universities, including
+                      elites like Brown and Georgetown along with major public
+                      school systems, are being sued by students dissatisfied
+                      with their pandemic online learning experience who now
+                      want at least part of their tuition money back.
+                    </p>
+                  </div>
+                </div>
+                <div class="more-stories-border pt-3">
+                  <img
+                    src="https://d.newsweek.com/en/full/1602359/5g-mast-getty.jpg?w=95&h=95&f=991ddbe654347cd88e44c0c2787b98ed"
+                    alt=""
+                    class="float-left pr-3"
+                  />
+                  <div>
+                    <h3 class="mt-2 more-stories">
+                      <a href="">
+                        Seattle to Crack Down on Protesters Occupying Capitol
+                        Hill After Shootings
+                      </a>
+                    </h3>
+                    <p class="card-text pb-3">
+                      Houston Police Chief Art Acevedo said no-one was injured
+                      in the attack on Southeast Houston police station.
+                    </p>
+                  </div>
+                </div>
+                <div class="more-stories-border pt-3">
+                  <img
+                    src="https://d.newsweek.com/en/full/1602359/5g-mast-getty.jpg?w=95&h=95&f=991ddbe654347cd88e44c0c2787b98ed"
+                    alt=""
+                    class="float-left pr-3"
+                  />
+                  <div>
+                    <h3 class="mt-2 more-stories">
+                      <a href="">
+                        Seattle to Crack Down on Protesters Occupying Capitol
+                        Hill After Shootings
+                      </a>
+                    </h3>
+                    <p class="card-text pb-3">
+                      A growing number of colleges and universities, including
+                      elites like Brown and Georgetown along with major public
+                      school systems, are being sued by students dissatisfied
+                      with their pandemic online learning experience who now
+                      want at least part of their tuition money back.
+                    </p>
+                  </div>
+                </div>
+                <div class="more-stories-border pt-3">
+                  <img
+                    src="https://d.newsweek.com/en/full/1602359/5g-mast-getty.jpg?w=95&h=95&f=991ddbe654347cd88e44c0c2787b98ed"
+                    alt=""
+                    class="float-left pr-3"
+                  />
+                  <div>
+                    <h3 class="mt-2 more-stories">
+                      <a href="">
+                        Seattle to Crack Down on Protesters Occupying Capitol
+                        Hill After Shootings
+                      </a>
+                    </h3>
+                    <p class="card-text pb-3">
+                      Houston Police Chief Art Acevedo said no-one was injured
+                      in the attack on Southeast Houston police station.
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-  
-          <!-- more stories -->
-          <div class="row px-3">
-            <h5 class="section-title mt-4">MORE STORIES</h5>
-            <div class="more-stories-border pt-3">
-              <img
-                src="https://d.newsweek.com/en/full/1602359/5g-mast-getty.jpg?w=95&h=95&f=991ddbe654347cd88e44c0c2787b98ed"
-                alt="" class="float-left pr-3" />
+
+          <!-- featured stories div -->
+          <div
+            class="bg-white mt-2 mt-lg-n2 col-md-5 featured-stories col-lg-3"
+          >
+            <h5 class="section-title mt-4">FEATURED STORIES</h5>
+            <div class="card border-0">
+              <a href="#" class="position-relative">
+                <img
+                  src="https://d.newsweek.com/en/full/1603025/donald-trump-200-judges.webp?w=397&h=265&q=90&f=2be5b1fad49019a9a9c879b0c787d3cb"
+                  alt=""
+                  class="card-img-top"
+                />
+                <small class="position-absolute py-2 px-3">U.S.</small>
+              </a>
               <div>
-                <h3 class="mt-2 more-stories">
-                  <a href="">Seattle to Crack Down on Protesters Occupying Capitol
-                    Hill After Shootings</a>
+                <h3 class="card-title mt-2">
+                  <a href="">
+                    Trump's Impact on Courts Cemented As 200th Judge Appointed
+                    to Federal Bench
+                  </a>
                 </h3>
-                <p class="card-text pb-3">
-                  A growing number of colleges and universities, including
-                  elites like Brown and Georgetown along with major public
-                  school systems, are being sued by students dissatisfied
-                  with their pandemic online learning experience who now
-                  want at least part of their tuition money back.
+                <p class="card-text pb-4">
+                  "No modern president has had this level of impact on the
+                  composition of the federal courts," said Jonathan Turley, a
+                  constitutional law professor at George Washington University.
                 </p>
               </div>
             </div>
-            <div class="more-stories-border pt-3">
-              <img
-                src="https://d.newsweek.com/en/full/1602359/5g-mast-getty.jpg?w=95&h=95&f=991ddbe654347cd88e44c0c2787b98ed"
-                alt="" class="float-left pr-3" />
+            <div class="card border-0">
+              <a href="#" class="position-relative">
+                <img
+                  src="https://d.newsweek.com/en/full/1602312/seattle-protest-zone.jpg?w=591&h=364&f=787ca4fe70bb1481d853d412f0c20782"
+                  alt=""
+                  class="card-img-top"
+                />
+                <small class="position-absolute py-2 px-3">NEWS</small>
+              </a>
               <div>
-                <h3 class="mt-2 more-stories">
-                  <a href="">Seattle to Crack Down on Protesters Occupying Capitol
-                    Hill After Shootings</a>
+                <h3 class="card-title mt-2">
+                  <a href="">
+                    Seattle to Crack Down on Protesters Occupying Capitol Hill
+                    After Shootings
+                  </a>
                 </h3>
-                <p class="card-text pb-3">
-                  Houston Police Chief Art Acevedo said no-one was injured
-                  in the attack on Southeast Houston police station.
+                <p class="card-text pb-4">
+                  Seattle Mayor Jenny Durkan announced plans that could lead to
+                  the dismantling of the city's Capitol Hill Occupied Protest,
+                  or CHOP, on Monday.
                 </p>
               </div>
             </div>
-            <div class="more-stories-border pt-3">
-              <img
-                src="https://d.newsweek.com/en/full/1602359/5g-mast-getty.jpg?w=95&h=95&f=991ddbe654347cd88e44c0c2787b98ed"
-                alt="" class="float-left pr-3" />
+            <div class="card border-0">
+              <a href="#" class="position-relative">
+                <img
+                  src="https://d.newsweek.com/en/full/1602312/seattle-protest-zone.jpg?w=591&h=364&f=787ca4fe70bb1481d853d412f0c20782"
+                  alt=""
+                  class="card-img-top"
+                />
+                <small class="position-absolute py-2 px-3">NEWS</small>
+              </a>
               <div>
-                <h3 class="mt-2 more-stories">
-                  <a href="">Seattle to Crack Down on Protesters Occupying Capitol
-                    Hill After Shootings</a>
+                <h3 class="card-title mt-2">
+                  <a href="">
+                    Seattle to Crack Down on Protesters Occupying Capitol Hill
+                    After Shootings
+                  </a>
                 </h3>
-                <p class="card-text pb-3">
-                  A growing number of colleges and universities, including
-                  elites like Brown and Georgetown along with major public
-                  school systems, are being sued by students dissatisfied
-                  with their pandemic online learning experience who now
-                  want at least part of their tuition money back.
+                <p class="card-text pb-4">
+                  Seattle Mayor Jenny Durkan announced plans that could lead to
+                  the dismantling of the city's Capitol Hill Occupied Protest,
+                  or CHOP, on Monday.
                 </p>
               </div>
             </div>
-            <div class="more-stories-border pt-3">
-              <img
-                src="https://d.newsweek.com/en/full/1602359/5g-mast-getty.jpg?w=95&h=95&f=991ddbe654347cd88e44c0c2787b98ed"
-                alt="" class="float-left pr-3" />
+            <div class="card border-0">
+              <a href="#" class="position-relative">
+                <img
+                  src="https://d.newsweek.com/en/full/1602312/seattle-protest-zone.jpg?w=591&h=364&f=787ca4fe70bb1481d853d412f0c20782"
+                  alt=""
+                  class="card-img-top"
+                />
+                <small class="position-absolute py-2 px-3">NEWS</small>
+              </a>
               <div>
-                <h3 class="mt-2 more-stories">
-                  <a href="">Seattle to Crack Down on Protesters Occupying Capitol
-                    Hill After Shootings</a>
+                <h3 class="card-title mt-2">
+                  <a href="">
+                    Seattle to Crack Down on Protesters Occupying Capitol Hill
+                    After Shootings
+                  </a>
                 </h3>
-                <p class="card-text pb-3">
-                  Houston Police Chief Art Acevedo said no-one was injured
-                  in the attack on Southeast Houston police station.
+                <p class="card-text pb-4">
+                  Seattle Mayor Jenny Durkan announced plans that could lead to
+                  the dismantling of the city's Capitol Hill Occupied Protest,
+                  or CHOP, on Monday.
                 </p>
               </div>
             </div>
-            <div class="more-stories-border pt-3">
-              <img
-                src="https://d.newsweek.com/en/full/1602359/5g-mast-getty.jpg?w=95&h=95&f=991ddbe654347cd88e44c0c2787b98ed"
-                alt="" class="float-left pr-3" />
+            <div class="card border-0">
+              <a href="#" class="position-relative">
+                <img
+                  src="https://d.newsweek.com/en/full/1602312/seattle-protest-zone.jpg?w=591&h=364&f=787ca4fe70bb1481d853d412f0c20782"
+                  alt=""
+                  class="card-img-top"
+                />
+                <small class="position-absolute py-2 px-3">NEWS</small>
+              </a>
               <div>
-                <h3 class="mt-2 more-stories">
-                  <a href="">Seattle to Crack Down on Protesters Occupying Capitol
-                    Hill After Shootings</a>
+                <h3 class="card-title mt-2">
+                  <a href="">
+                    Seattle to Crack Down on Protesters Occupying Capitol Hill
+                    After Shootings
+                  </a>
                 </h3>
-                <p class="card-text pb-3">
-                  A growing number of colleges and universities, including
-                  elites like Brown and Georgetown along with major public
-                  school systems, are being sued by students dissatisfied
-                  with their pandemic online learning experience who now
-                  want at least part of their tuition money back.
+                <p class="card-text pb-4">
+                  Seattle Mayor Jenny Durkan announced plans that could lead to
+                  the dismantling of the city's Capitol Hill Occupied Protest,
+                  or CHOP, on Monday.
                 </p>
               </div>
-            </div>
-            <div class="more-stories-border pt-3">
-              <img
-                src="https://d.newsweek.com/en/full/1602359/5g-mast-getty.jpg?w=95&h=95&f=991ddbe654347cd88e44c0c2787b98ed"
-                alt="" class="float-left pr-3" />
-              <div>
-                <h3 class="mt-2 more-stories">
-                  <a href="">Seattle to Crack Down on Protesters Occupying Capitol
-                    Hill After Shootings</a>
-                </h3>
-                <p class="card-text pb-3">
-                  Houston Police Chief Art Acevedo said no-one was injured
-                  in the attack on Southeast Houston police station.
-                </p>
-              </div>
-            </div>
-  
-  
-          </div>
-        </div>
-      </div>
-  
-  
-  
-      <!-- The debate div -->
-      <div class="bg-white my-4 pb-4 col-md-12 the-debate col-lg-4">
-        <h5 class="section-title mt-4">THE DEBATE</h5>
-        <div class="py-3 debate">
-          <div class="row no-gutters">
-            <div class="col-2 pr-3">
-              <img
-                src="https://d.newsweek.com/en/full/1601312/j-christian-adams-hans-von-spakovsky.png?w=150&h=150&f=ab899e5f7a2565301e49cc393100fd20"
-                class="img-full-width" alt="..." />
-            </div>
-            <div class="col-10">
-              <h5 class="small-header">
-                <a href="">Seattle to Crack Down on Protesters Occupying Capitol
-                  Hill After Shootings</a>
-              </h5>
-              <p class="small-header">
-                <span class="text-muted">BY</span> J. CHRISTIAN ADAMS AND
-                HANS VON SPAKOVSKY
-              </p>
             </div>
           </div>
-          <div class="debate-vs position-relative mt-3 mb-4">
-            <span class="position-absolute">VS</span>
-          </div>
-          <div class="row no-gutters">
-            <div class="col-9">
-              <h5 class="small-header">
-                <a href="">Seattle to Crack Down on Protesters Occupying Capitol
-                  Hill After Shootings</a>
-              </h5>
-              <p class="small-header">
-                <span class="text-muted">BY</span> J. CHRISTIAN ADAMS AND
-                HANS VON SPAKOVSKY
-              </p>
+
+          <!-- The debate div -->
+          <div class="bg-white my-4 pb-4 col-md-12 the-debate col-lg-4">
+            <h5 class="section-title mt-4">THE DEBATE</h5>
+            <div class="py-3 debate">
+              <div class="row no-gutters">
+                <div class="col-2 pr-3">
+                  <img
+                    src="https://d.newsweek.com/en/full/1601312/j-christian-adams-hans-von-spakovsky.png?w=150&h=150&f=ab899e5f7a2565301e49cc393100fd20"
+                    class="img-full-width"
+                    alt="..."
+                  />
+                </div>
+                <div class="col-10">
+                  <h5 class="small-header">
+                    <a href="">
+                      Seattle to Crack Down on Protesters Occupying Capitol Hill
+                      After Shootings
+                    </a>
+                  </h5>
+                  <p class="small-header">
+                    <span class="text-muted">BY</span>
+                    J. CHRISTIAN ADAMS AND HANS VON SPAKOVSKY
+                  </p>
+                </div>
+              </div>
+              <div class="debate-vs position-relative mt-3 mb-4">
+                <span class="position-absolute">VS</span>
+              </div>
+              <div class="row no-gutters">
+                <div class="col-9">
+                  <h5 class="small-header">
+                    <a href="">
+                      Seattle to Crack Down on Protesters Occupying Capitol Hill
+                      After Shootings
+                    </a>
+                  </h5>
+                  <p class="small-header">
+                    <span class="text-muted">BY</span>
+                    J. CHRISTIAN ADAMS AND HANS VON SPAKOVSKY
+                  </p>
+                </div>
+                <div class="offset-1 col-2 pl-3">
+                  <img
+                    src="https://d.newsweek.com/en/full/1601304/wendy-weiser.png?w=150&h=150&f=36889aac582788f4bc8d118044f0b3e6"
+                    class="img-full-width"
+                    alt="..."
+                  />
+                </div>
+              </div>
             </div>
-            <div class="offset-1 col-2 pl-3">
-              <img
-                src="https://d.newsweek.com/en/full/1601304/wendy-weiser.png?w=150&h=150&f=36889aac582788f4bc8d118044f0b3e6"
-                class="img-full-width" alt="..." />
+
+            <!-- debate added content on large screen -->
+            <div class="d-none d-lg-block">
+              <!-- opinion -->
+              <h5 class="section-title mt-4">OPINION</h5>
+              <div class="row no-gutters">
+                <div class="col-2 pr-3">
+                  <img
+                    src="https://d.newsweek.com/en/full/1601312/j-christian-adams-hans-von-spakovsky.png?w=150&h=150&f=ab899e5f7a2565301e49cc393100fd20"
+                    class="img-full-width"
+                    alt="..."
+                  />
+                </div>
+                <div class="col-10">
+                  <h5 class="small-header">
+                    <a href="">
+                      Seattle to Crack Down on Protesters Occupying Capitol Hill
+                      After Shootings
+                    </a>
+                  </h5>
+                  <p class="small-header text-muted">
+                    BY J. CHRISTIAN ADAMS AND HANS VON SPAKOVSKY
+                  </p>
+                </div>
+              </div>
+              <hr class="mt-0" />
+              <div class="row no-gutters">
+                <div class="col-2 pr-3">
+                  <img
+                    src="https://d.newsweek.com/en/full/1601312/j-christian-adams-hans-von-spakovsky.png?w=150&h=150&f=ab899e5f7a2565301e49cc393100fd20"
+                    class="img-full-width"
+                    alt="..."
+                  />
+                </div>
+                <div class="col-10">
+                  <h5 class="small-header">
+                    <a href="">
+                      Seattle to Crack Down on Protesters Occupying Capitol Hill
+                      After Shootings
+                    </a>
+                  </h5>
+                  <p class="small-header text-muted">
+                    BY J. CHRISTIAN ADAMS AND HANS VON SPAKOVSKY
+                  </p>
+                </div>
+              </div>
+              <hr class="mt-0" />
+              <div class="row no-gutters">
+                <div class="col-2 pr-3">
+                  <img
+                    src="https://d.newsweek.com/en/full/1601312/j-christian-adams-hans-von-spakovsky.png?w=150&h=150&f=ab899e5f7a2565301e49cc393100fd20"
+                    class="img-full-width"
+                    alt="..."
+                  />
+                </div>
+                <div class="col-10">
+                  <h5 class="small-header">
+                    <a href="">
+                      Seattle to Crack Down on Protesters Occupying Capitol Hill
+                      After Shootings
+                    </a>
+                  </h5>
+                  <p class="small-header text-muted">
+                    BY J. CHRISTIAN ADAMS AND HANS VON SPAKOVSKY
+                  </p>
+                </div>
+              </div>
+              <hr class="mt-0" />
+              <div class="row no-gutters">
+                <div class="col-2 pr-3">
+                  <img
+                    src="https://d.newsweek.com/en/full/1601312/j-christian-adams-hans-von-spakovsky.png?w=150&h=150&f=ab899e5f7a2565301e49cc393100fd20"
+                    class="img-full-width"
+                    alt="..."
+                  />
+                </div>
+                <div class="col-10">
+                  <h5 class="small-header">
+                    <a href="">
+                      Seattle to Crack Down on Protesters Occupying Capitol Hill
+                      After Shootings
+                    </a>
+                  </h5>
+                  <p class="small-header text-muted">
+                    BY J. CHRISTIAN ADAMS AND HANS VON SPAKOVSKY
+                  </p>
+                </div>
+              </div>
+              <hr class="mt-0" />
+              <div class="row no-gutters">
+                <div class="col-2 pr-3">
+                  <img
+                    src="https://d.newsweek.com/en/full/1601312/j-christian-adams-hans-von-spakovsky.png?w=150&h=150&f=ab899e5f7a2565301e49cc393100fd20"
+                    class="img-full-width"
+                    alt="..."
+                  />
+                </div>
+                <div class="col-10">
+                  <h5 class="small-header">
+                    <a href="">
+                      Seattle to Crack Down on Protesters Occupying Capitol Hill
+                      After Shootings
+                    </a>
+                  </h5>
+                  <p class="small-header text-muted">
+                    BY J. CHRISTIAN ADAMS AND HANS VON SPAKOVSKY
+                  </p>
+                </div>
+              </div>
+              <hr class="mt-0" />
+              <div class="row no-gutters">
+                <div class="col-2 pr-3">
+                  <img
+                    src="https://d.newsweek.com/en/full/1601312/j-christian-adams-hans-von-spakovsky.png?w=150&h=150&f=ab899e5f7a2565301e49cc393100fd20"
+                    class="img-full-width"
+                    alt="..."
+                  />
+                </div>
+                <div class="col-10">
+                  <h5 class="small-header">
+                    <a href="">
+                      Seattle to Crack Down on Protesters Occupying Capitol Hill
+                      After Shootings
+                    </a>
+                  </h5>
+                  <p class="small-header text-muted">
+                    BY J. CHRISTIAN ADAMS AND HANS VON SPAKOVSKY
+                  </p>
+                </div>
+              </div>
+
+              <!-- Newsletter -->
+              <section class="bg-white mt-3 col-12">
+                <div class="my-4">
+                  <h4 class="newsletter-header text-uppercase">Newsletter</h4>
+                  <div class="newsletter-main py-3 border">
+                    <h6 class="text-center mx-auto newsletter-content-h6">
+                      The Starting 5
+                    </h6>
+                    <p class="text-center newsletter-content-p">
+                      START YOUR DAY WITH OUR TOP 5 ARTICLES
+                    </p>
+                    <input
+                      class="d-flex justify-content-center mx-auto newsletter-content-input ml-3 mb-2 pl-2"
+                      type="email"
+                      placeholder="Email address"
+                    />
+                    <button
+                      class="d-flex justify-content-center btn btn-danger mx-auto newsletter-content-button"
+                    >
+                      FREE SIGNUP
+                      <i class="fa fa-chevron-right align-self-center pl-2"></i>
+                    </button>
+                  </div>
+                </div>
+              </section>
             </div>
           </div>
-        </div>
-  
-        <!-- debate added content on large screen -->
-        <div class="d-none d-lg-block">
           <!-- opinion -->
-          <h5 class="section-title mt-4">OPINION</h5>
-          <div class="row no-gutters">
-            <div class="col-2 pr-3">
-              <img
-                src="https://d.newsweek.com/en/full/1601312/j-christian-adams-hans-von-spakovsky.png?w=150&h=150&f=ab899e5f7a2565301e49cc393100fd20"
-                class="img-full-width" alt="..." />
-            </div>
-            <div class="col-10">
-              <h5 class="small-header">
-                <a href="">Seattle to Crack Down on Protesters Occupying Capitol
-                  Hill After Shootings</a>
-              </h5>
-              <p class="small-header text-muted">
-                BY J. CHRISTIAN ADAMS AND HANS VON SPAKOVSKY
-              </p>
-            </div>
-          </div>
-          <hr class="mt-0" />
-          <div class="row no-gutters">
-            <div class="col-2 pr-3">
-              <img
-                src="https://d.newsweek.com/en/full/1601312/j-christian-adams-hans-von-spakovsky.png?w=150&h=150&f=ab899e5f7a2565301e49cc393100fd20"
-                class="img-full-width" alt="..." />
-            </div>
-            <div class="col-10">
-              <h5 class="small-header">
-                <a href="">Seattle to Crack Down on Protesters Occupying Capitol
-                  Hill After Shootings</a>
-              </h5>
-              <p class="small-header text-muted">
-                BY J. CHRISTIAN ADAMS AND HANS VON SPAKOVSKY
-              </p>
-            </div>
-          </div>
-          <hr class="mt-0" />
-          <div class="row no-gutters">
-            <div class="col-2 pr-3">
-              <img
-                src="https://d.newsweek.com/en/full/1601312/j-christian-adams-hans-von-spakovsky.png?w=150&h=150&f=ab899e5f7a2565301e49cc393100fd20"
-                class="img-full-width" alt="..." />
-            </div>
-            <div class="col-10">
-              <h5 class="small-header">
-                <a href="">Seattle to Crack Down on Protesters Occupying Capitol
-                  Hill After Shootings</a>
-              </h5>
-              <p class="small-header text-muted">
-                BY J. CHRISTIAN ADAMS AND HANS VON SPAKOVSKY
-              </p>
-            </div>
-          </div>
-          <hr class="mt-0" />
-          <div class="row no-gutters">
-            <div class="col-2 pr-3">
-              <img
-                src="https://d.newsweek.com/en/full/1601312/j-christian-adams-hans-von-spakovsky.png?w=150&h=150&f=ab899e5f7a2565301e49cc393100fd20"
-                class="img-full-width" alt="..." />
-            </div>
-            <div class="col-10">
-              <h5 class="small-header">
-                <a href="">Seattle to Crack Down on Protesters Occupying Capitol
-                  Hill After Shootings</a>
-              </h5>
-              <p class="small-header text-muted">
-                BY J. CHRISTIAN ADAMS AND HANS VON SPAKOVSKY
-              </p>
-            </div>
-          </div>
-          <hr class="mt-0" />
-          <div class="row no-gutters">
-            <div class="col-2 pr-3">
-              <img
-                src="https://d.newsweek.com/en/full/1601312/j-christian-adams-hans-von-spakovsky.png?w=150&h=150&f=ab899e5f7a2565301e49cc393100fd20"
-                class="img-full-width" alt="..." />
-            </div>
-            <div class="col-10">
-              <h5 class="small-header">
-                <a href="">Seattle to Crack Down on Protesters Occupying Capitol
-                  Hill After Shootings</a>
-              </h5>
-              <p class="small-header text-muted">
-                BY J. CHRISTIAN ADAMS AND HANS VON SPAKOVSKY
-              </p>
-            </div>
-          </div>
-          <hr class="mt-0" />
-          <div class="row no-gutters">
-            <div class="col-2 pr-3">
-              <img
-                src="https://d.newsweek.com/en/full/1601312/j-christian-adams-hans-von-spakovsky.png?w=150&h=150&f=ab899e5f7a2565301e49cc393100fd20"
-                class="img-full-width" alt="..." />
-            </div>
-            <div class="col-10">
-              <h5 class="small-header">
-                <a href="">Seattle to Crack Down on Protesters Occupying Capitol
-                  Hill After Shootings</a>
-              </h5>
-              <p class="small-header text-muted">
-                BY J. CHRISTIAN ADAMS AND HANS VON SPAKOVSKY
-              </p>
-            </div>
-          </div>
-  
-          <!-- Newsletter -->
-          <section class="bg-white mt-3 col-12">
-            <div class="my-4">
-              <h4 class="newsletter-header text-uppercase">Newsletter</h4>
-              <div class="newsletter-main py-3 border">
-                <h6 class="text-center mx-auto newsletter-content-h6">
-                  The Starting 5
-                </h6>
-                <p class="text-center newsletter-content-p">
-                  START YOUR DAY WITH OUR TOP 5 ARTICLES
+          <div class="bg-white col-md-12 d-lg-none">
+            <h5 class="section-title mt-4">OPINION</h5>
+            <div class="row no-gutters">
+              <div class="col-2 pr-3">
+                <img
+                  src="https://d.newsweek.com/en/full/1601312/j-christian-adams-hans-von-spakovsky.png?w=150&h=150&f=ab899e5f7a2565301e49cc393100fd20"
+                  class="img-full-width"
+                  alt="..."
+                />
+              </div>
+              <div class="col-10">
+                <h5 class="small-header">
+                  <a href="">
+                    Seattle to Crack Down on Protesters Occupying Capitol Hill
+                    After Shootings
+                  </a>
+                </h5>
+                <p class="small-header text-muted">
+                  BY J. CHRISTIAN ADAMS AND HANS VON SPAKOVSKY
                 </p>
-                <input class="d-flex justify-content-center mx-auto newsletter-content-input ml-3 mb-2 pl-2" type="email"
-                  placeholder="Email address" />
-                <button class="d-flex justify-content-center btn btn-danger mx-auto newsletter-content-button">
-                  FREE SIGNUP
-                  <i class="fa fa-chevron-right align-self-center pl-2"></i>
-                </button>
               </div>
             </div>
-          </section>
-        </div>
-      </div>
-      <!-- opinion -->
-      <div class="bg-white col-md-12 d-lg-none">
-        <h5 class="section-title mt-4">OPINION</h5>
-        <div class="row no-gutters">
-          <div class="col-2 pr-3">
-            <img
-              src="https://d.newsweek.com/en/full/1601312/j-christian-adams-hans-von-spakovsky.png?w=150&h=150&f=ab899e5f7a2565301e49cc393100fd20"
-              class="img-full-width" alt="..." />
+            <hr class="mt-0" />
+            <div class="row no-gutters">
+              <div class="col-2 pr-3">
+                <img
+                  src="https://d.newsweek.com/en/full/1601312/j-christian-adams-hans-von-spakovsky.png?w=150&h=150&f=ab899e5f7a2565301e49cc393100fd20"
+                  class="img-full-width"
+                  alt="..."
+                />
+              </div>
+              <div class="col-10">
+                <h5 class="small-header">
+                  <a href="">
+                    Seattle to Crack Down on Protesters Occupying Capitol Hill
+                    After Shootings
+                  </a>
+                </h5>
+                <p class="small-header text-muted">
+                  BY J. CHRISTIAN ADAMS AND HANS VON SPAKOVSKY
+                </p>
+              </div>
+            </div>
+            <hr class="mt-0" />
+            <div class="row no-gutters">
+              <div class="col-2 pr-3">
+                <img
+                  src="https://d.newsweek.com/en/full/1601312/j-christian-adams-hans-von-spakovsky.png?w=150&h=150&f=ab899e5f7a2565301e49cc393100fd20"
+                  class="img-full-width"
+                  alt="..."
+                />
+              </div>
+              <div class="col-10">
+                <h5 class="small-header">
+                  <a href="">
+                    Seattle to Crack Down on Protesters Occupying Capitol Hill
+                    After Shootings
+                  </a>
+                </h5>
+                <p class="small-header text-muted">
+                  BY J. CHRISTIAN ADAMS AND HANS VON SPAKOVSKY
+                </p>
+              </div>
+            </div>
+            <hr class="mt-0" />
+            <div class="row no-gutters">
+              <div class="col-2 pr-3">
+                <img
+                  src="https://d.newsweek.com/en/full/1601312/j-christian-adams-hans-von-spakovsky.png?w=150&h=150&f=ab899e5f7a2565301e49cc393100fd20"
+                  class="img-full-width"
+                  alt="..."
+                />
+              </div>
+              <div class="col-10">
+                <h5 class="small-header">
+                  <a href="">
+                    Seattle to Crack Down on Protesters Occupying Capitol Hill
+                    After Shootings
+                  </a>
+                </h5>
+                <p class="small-header text-muted">
+                  BY J. CHRISTIAN ADAMS AND HANS VON SPAKOVSKY
+                </p>
+              </div>
+            </div>
+            <hr class="mt-0" />
+            <div class="row no-gutters">
+              <div class="col-2 pr-3">
+                <img
+                  src="https://d.newsweek.com/en/full/1601312/j-christian-adams-hans-von-spakovsky.png?w=150&h=150&f=ab899e5f7a2565301e49cc393100fd20"
+                  class="img-full-width"
+                  alt="..."
+                />
+              </div>
+              <div class="col-10">
+                <h5 class="small-header">
+                  <a href="">
+                    Seattle to Crack Down on Protesters Occupying Capitol Hill
+                    After Shootings
+                  </a>
+                </h5>
+                <p class="small-header text-muted">
+                  BY J. CHRISTIAN ADAMS AND HANS VON SPAKOVSKY
+                </p>
+              </div>
+            </div>
+            <hr class="mt-0" />
+            <div class="row no-gutters">
+              <div class="col-2 pr-3">
+                <img
+                  src="https://d.newsweek.com/en/full/1601312/j-christian-adams-hans-von-spakovsky.png?w=150&h=150&f=ab899e5f7a2565301e49cc393100fd20"
+                  class="img-full-width"
+                  alt="..."
+                />
+              </div>
+              <div class="col-10">
+                <h5 class="small-header">
+                  <a href="">
+                    Seattle to Crack Down on Protesters Occupying Capitol Hill
+                    After Shootings
+                  </a>
+                </h5>
+                <p class="small-header text-muted">
+                  BY J. CHRISTIAN ADAMS AND HANS VON SPAKOVSKY
+                </p>
+              </div>
+            </div>
           </div>
-          <div class="col-10">
-            <h5 class="small-header">
-              <a href="">Seattle to Crack Down on Protesters Occupying Capitol Hill
-                After Shootings</a>
+          <!-- sponsored -->
+          <div class="bg-white mt-3 d-md-none">
+            <div class="card mb-4">
+              <a href="#" class="position-relative">
+                <img
+                  src="https://d.newsweek.com/en/full/1602312/seattle-protest-zone.jpg?w=591&h=364&f=787ca4fe70bb1481d853d412f0c20782"
+                  alt=""
+                  class="card-img-top"
+                />
+                <small class="position-absolute py-2 px-3 text-primary">
+                  SPONSORED INSIGHT
+                </small>
+              </a>
+              <div class="px-3">
+                <h3 class="card-title mt-2">
+                  <a href="">
+                    What is an IB Private Education and Why is it so Important?
+                  </a>
+                </h3>
+                <p class="card-text pb-4">
+                  The aim of the IB is to offer the best possible international
+                  education for students of all backgrounds and from every part
+                  of the world. Find out more.
+                </p>
+              </div>
+            </div>
+            <div class="card mb-4">
+              <a href="#">
+                <img
+                  src="https://d.newsweek.com/en/full/1602312/seattle-protest-zone.jpg?w=591&h=364&f=787ca4fe70bb1481d853d412f0c20782"
+                  alt=""
+                  class="card-img-top"
+                />
+              </a>
+              <div class="px-3">
+                <h3 class="card-title mt-2">
+                  <a href="">
+                    What is an IB Private Education and Why is it so Important?
+                  </a>
+                </h3>
+                <p class="card-text pb-4">
+                  The aim of the IB is to offer the best possible international
+                  education for students of all backgrounds and from every part
+                  of the world. Find out more.
+                </p>
+              </div>
+            </div>
+            <div class="card mb-4">
+              <a href="#">
+                <img
+                  src="https://d.newsweek.com/en/full/1602312/seattle-protest-zone.jpg?w=591&h=364&f=787ca4fe70bb1481d853d412f0c20782"
+                  alt=""
+                  class="card-img-top"
+                />
+              </a>
+              <div class="px-3">
+                <h3 class="card-title mt-2">
+                  <a href="">
+                    Newsweek AMPLIFY Launches Strategic Partnership Solutions
+                    for Brands
+                  </a>
+                </h3>
+                <p class="card-text pb-4">
+                  The aim of the IB is to offer the best possible international
+                  education for students of all backgrounds and from every part
+                  of the world. Find out more.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- more stories -->
+          <div class="bg-white mt-3 d-md-none">
+            <h5 class="section-title mt-4">MORE STORIES</h5>
+            <hr class="mt-0" />
+            <div>
+              <img
+                src="https://d.newsweek.com/en/full/1602359/5g-mast-getty.jpg?w=95&h=95&f=991ddbe654347cd88e44c0c2787b98ed"
+                alt=""
+                class="float-left pr-3"
+              />
+              <div>
+                <h3 class="mt-2 more-stories">
+                  <a href="">
+                    Seattle to Crack Down on Protesters Occupying Capitol Hill
+                    After Shootings
+                  </a>
+                </h3>
+                <p class="card-text pb-4">
+                  A growing number of colleges and universities, including
+                  elites like Brown and Georgetown along with major public
+                  school systems, are being sued by students dissatisfied with
+                  their pandemic online learning experience who now want at
+                  least part of their tuition money back.
+                </p>
+              </div>
+            </div>
+            <hr class="mt-0" />
+            <div>
+              <img
+                src="https://d.newsweek.com/en/full/1602359/5g-mast-getty.jpg?w=95&h=95&f=991ddbe654347cd88e44c0c2787b98ed"
+                alt=""
+                class="float-left pr-3"
+              />
+              <div>
+                <h3 class="mt-2 more-stories">
+                  <a href="">
+                    Seattle to Crack Down on Protesters Occupying Capitol Hill
+                    After Shootings
+                  </a>
+                </h3>
+                <p class="card-text pb-4">
+                  Houston Police Chief Art Acevedo said no-one was injured in
+                  the attack on Southeast Houston police station.
+                </p>
+              </div>
+            </div>
+            <hr class="mt-0" />
+            <div>
+              <img
+                src="https://d.newsweek.com/en/full/1602359/5g-mast-getty.jpg?w=95&h=95&f=991ddbe654347cd88e44c0c2787b98ed"
+                alt=""
+                class="float-left pr-3"
+              />
+              <div>
+                <h3 class="mt-2 more-stories">
+                  <a href="">
+                    Seattle to Crack Down on Protesters Occupying Capitol Hill
+                    After Shootings
+                  </a>
+                </h3>
+                <p class="card-text pb-4">
+                  A growing number of colleges and universities, including
+                  elites like Brown and Georgetown along with major public
+                  school systems, are being sued by students dissatisfied with
+                  their pandemic online learning experience who now want at
+                  least part of their tuition money back.
+                </p>
+              </div>
+            </div>
+            <hr class="mt-0" />
+            <div>
+              <img
+                src="https://d.newsweek.com/en/full/1602359/5g-mast-getty.jpg?w=95&h=95&f=991ddbe654347cd88e44c0c2787b98ed"
+                alt=""
+                class="float-left pr-3"
+              />
+              <div>
+                <h3 class="mt-2 more-stories">
+                  <a href="">
+                    Seattle to Crack Down on Protesters Occupying Capitol Hill
+                    After Shootings
+                  </a>
+                </h3>
+                <p class="card-text pb-4">
+                  Houston Police Chief Art Acevedo said no-one was injured in
+                  the attack on Southeast Houston police station.
+                </p>
+              </div>
+            </div>
+            <hr class="mt-0" />
+            <div>
+              <img
+                src="https://d.newsweek.com/en/full/1602359/5g-mast-getty.jpg?w=95&h=95&f=991ddbe654347cd88e44c0c2787b98ed"
+                alt=""
+                class="float-left pr-3"
+              />
+              <div>
+                <h3 class="mt-2 more-stories">
+                  <a href="">
+                    Seattle to Crack Down on Protesters Occupying Capitol Hill
+                    After Shootings
+                  </a>
+                </h3>
+                <p class="card-text pb-4">
+                  A growing number of colleges and universities, including
+                  elites like Brown and Georgetown along with major public
+                  school systems, are being sued by students dissatisfied with
+                  their pandemic online learning experience who now want at
+                  least part of their tuition money back.
+                </p>
+              </div>
+            </div>
+            <hr class="mt-0" />
+            <div>
+              <img
+                src="https://d.newsweek.com/en/full/1602359/5g-mast-getty.jpg?w=95&h=95&f=991ddbe654347cd88e44c0c2787b98ed"
+                alt=""
+                class="float-left pr-3"
+              />
+              <div>
+                <h3 class="mt-2 more-stories">
+                  <a href="">
+                    Seattle to Crack Down on Protesters Occupying Capitol Hill
+                    After Shootings
+                  </a>
+                </h3>
+                <p class="card-text pb-4">
+                  Houston Police Chief Art Acevedo said no-one was injured in
+                  the attack on Southeast Houston police station.
+                </p>
+              </div>
+            </div>
+            <hr class="mt-0" />
+            <div>
+              <img
+                src="https://d.newsweek.com/en/full/1602359/5g-mast-getty.jpg?w=95&h=95&f=991ddbe654347cd88e44c0c2787b98ed"
+                alt=""
+                class="float-left pr-3"
+              />
+              <div>
+                <h3 class="mt-2 more-stories">
+                  <a href="">
+                    Seattle to Crack Down on Protesters Occupying Capitol Hill
+                    After Shootings
+                  </a>
+                </h3>
+                <p class="card-text pb-4">
+                  A growing number of colleges and universities, including
+                  elites like Brown and Georgetown along with major public
+                  school systems, are being sued by students dissatisfied with
+                  their pandemic online learning experience who now want at
+                  least part of their tuition money back.
+                </p>
+              </div>
+            </div>
+            <hr class="mt-0" />
+            <div>
+              <img
+                src="https://d.newsweek.com/en/full/1602359/5g-mast-getty.jpg?w=95&h=95&f=991ddbe654347cd88e44c0c2787b98ed"
+                alt=""
+                class="float-left pr-3"
+              />
+              <div>
+                <h3 class="mt-2 more-stories">
+                  <a href="">
+                    Seattle to Crack Down on Protesters Occupying Capitol Hill
+                    After Shootings
+                  </a>
+                </h3>
+                <p class="card-text pb-4">
+                  Houston Police Chief Art Acevedo said no-one was injured in
+                  the attack on Southeast Houston police station.
+                </p>
+              </div>
+            </div>
+            <hr class="mt-0" />
+            <div>
+              <img
+                src="https://d.newsweek.com/en/full/1602359/5g-mast-getty.jpg?w=95&h=95&f=991ddbe654347cd88e44c0c2787b98ed"
+                alt=""
+                class="float-left pr-3"
+              />
+              <div>
+                <h3 class="mt-2 more-stories">
+                  <a href="">
+                    Seattle to Crack Down on Protesters Occupying Capitol Hill
+                    After Shootings
+                  </a>
+                </h3>
+                <p class="card-text pb-4">
+                  A growing number of colleges and universities, including
+                  elites like Brown and Georgetown along with major public
+                  school systems, are being sued by students dissatisfied with
+                  their pandemic online learning experience who now want at
+                  least part of their tuition money back.
+                </p>
+              </div>
+            </div>
+            <hr class="mt-0" />
+            <div>
+              <img
+                src="https://d.newsweek.com/en/full/1602359/5g-mast-getty.jpg?w=95&h=95&f=991ddbe654347cd88e44c0c2787b98ed"
+                alt=""
+                class="float-left pr-3"
+              />
+              <div>
+                <h3 class="mt-2 more-stories">
+                  <a href="">
+                    Seattle to Crack Down on Protesters Occupying Capitol Hill
+                    After Shootings
+                  </a>
+                </h3>
+                <p class="card-text pb-4">
+                  Houston Police Chief Art Acevedo said no-one was injured in
+                  the attack on Southeast Houston police station.
+                </p>
+              </div>
+            </div>
+            <hr class="mt-0" />
+            <div>
+              <img
+                src="https://d.newsweek.com/en/full/1602359/5g-mast-getty.jpg?w=95&h=95&f=991ddbe654347cd88e44c0c2787b98ed"
+                alt=""
+                class="float-left pr-3"
+              />
+              <div>
+                <h3 class="mt-2 more-stories">
+                  <a href="">
+                    Seattle to Crack Down on Protesters Occupying Capitol Hill
+                    After Shootings
+                  </a>
+                </h3>
+                <p class="card-text pb-4">
+                  A growing number of colleges and universities, including
+                  elites like Brown and Georgetown along with major public
+                  school systems, are being sued by students dissatisfied with
+                  their pandemic online learning experience who now want at
+                  least part of their tuition money back.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- my turn -->
+          <div class="bg-white mt-4 col-12 d-md-none">
+            <h5 class="section-title mt-4">MY TURN</h5>
+            <a href="">
+              <img
+                src="https://d.newsweek.com/en/full/1601757/racism-fathers-day-black-lives-matter-father.jpg?w=397&h=397&f=a558e40ae45f8c6df39831cfe21ce8f7"
+                alt=""
+                class="img-full-width"
+              />
+            </a>
+            <h5 class="section-title my-3">
+              'I Am A Black Father, It's Impossible to Prepare Your Kids For
+              Racism'
             </h5>
-            <p class="small-header text-muted">
-              BY J. CHRISTIAN ADAMS AND HANS VON SPAKOVSKY
-            </p>
-          </div>
-        </div>
-        <hr class="mt-0" />
-        <div class="row no-gutters">
-          <div class="col-2 pr-3">
-            <img
-              src="https://d.newsweek.com/en/full/1601312/j-christian-adams-hans-von-spakovsky.png?w=150&h=150&f=ab899e5f7a2565301e49cc393100fd20"
-              class="img-full-width" alt="..." />
-          </div>
-          <div class="col-10">
-            <h5 class="small-header">
-              <a href="">Seattle to Crack Down on Protesters Occupying Capitol Hill
-                After Shootings</a>
+            <a href="">
+              <img
+                src="https://d.newsweek.com/en/full/1601757/racism-fathers-day-black-lives-matter-father.jpg?w=397&h=397&f=a558e40ae45f8c6df39831cfe21ce8f7"
+                alt=""
+                class="img-full-width"
+              />
+            </a>
+            <h5 class="section-title my-3">
+              'I Am A Black Father, It's Impossible to Prepare Your Kids For
+              Racism'
             </h5>
-            <p class="small-header text-muted">
-              BY J. CHRISTIAN ADAMS AND HANS VON SPAKOVSKY
-            </p>
-          </div>
-        </div>
-        <hr class="mt-0" />
-        <div class="row no-gutters">
-          <div class="col-2 pr-3">
-            <img
-              src="https://d.newsweek.com/en/full/1601312/j-christian-adams-hans-von-spakovsky.png?w=150&h=150&f=ab899e5f7a2565301e49cc393100fd20"
-              class="img-full-width" alt="..." />
-          </div>
-          <div class="col-10">
-            <h5 class="small-header">
-              <a href="">Seattle to Crack Down on Protesters Occupying Capitol Hill
-                After Shootings</a>
+            <a href="">
+              <img
+                src="https://d.newsweek.com/en/full/1601757/racism-fathers-day-black-lives-matter-father.jpg?w=397&h=397&f=a558e40ae45f8c6df39831cfe21ce8f7"
+                alt=""
+                class="img-full-width"
+              />
+            </a>
+            <h5 class="section-title my-3">
+              'I Am A Black Father, It's Impossible to Prepare Your Kids For
+              Racism'
             </h5>
-            <p class="small-header text-muted">
-              BY J. CHRISTIAN ADAMS AND HANS VON SPAKOVSKY
-            </p>
+
+            <!-- CULTURE & TRAVEL -->
+            <h5 class="section-title mt-4">CULTURE & TRAVEL</h5>
+            <div class="card border-0">
+              <a href="#" class="position-relative">
+                <img
+                  src="https://d.newsweek.com/en/full/1601757/racism-fathers-day-black-lives-matter-father.jpg?w=397&h=397&f=a558e40ae45f8c6df39831cfe21ce8f7"
+                  alt=""
+                  class="card-img-top"
+                />
+                <small class="position-absolute py-1 px-1 culture">
+                  CORONAVIRUS
+                </small>
+              </a>
+              <h5 class="section-title my-3">
+                'I Am A Black Father, It's Impossible to Prepare Your Kids For
+                Racism'
+              </h5>
+            </div>
+            <div class="card border-0">
+              <a href="#" class="position-relative">
+                <img
+                  src="https://d.newsweek.com/en/full/1601757/racism-fathers-day-black-lives-matter-father.jpg?w=397&h=397&f=a558e40ae45f8c6df39831cfe21ce8f7"
+                  alt=""
+                  class="card-img-top"
+                />
+                <small class="position-absolute py-1 px-1 culture">
+                  CORONAVIRUS
+                </small>
+              </a>
+              <h5 class="section-title my-3">
+                'I Am A Black Father, It's Impossible to Prepare Your Kids For
+                Racism'
+              </h5>
+            </div>
+            <div class="card border-0">
+              <a href="#" class="position-relative">
+                <img
+                  src="https://d.newsweek.com/en/full/1601757/racism-fathers-day-black-lives-matter-father.jpg?w=397&h=397&f=a558e40ae45f8c6df39831cfe21ce8f7"
+                  alt=""
+                  class="card-img-top"
+                />
+                <small class="position-absolute py-1 px-1 culture">
+                  CORONAVIRUS
+                </small>
+              </a>
+              <h5 class="section-title my-3">
+                'I Am A Black Father, It's Impossible to Prepare Your Kids For
+                Racism'
+              </h5>
+            </div>
           </div>
-        </div>
-        <hr class="mt-0" />
-        <div class="row no-gutters">
-          <div class="col-2 pr-3">
-            <img
-              src="https://d.newsweek.com/en/full/1601312/j-christian-adams-hans-von-spakovsky.png?w=150&h=150&f=ab899e5f7a2565301e49cc393100fd20"
-              class="img-full-width" alt="..." />
+          <!-- sponsored2 -->
+          <div class="bg-white pt-4 col-md-6 offset-md-3 d-lg-none">
+            <div class="card mb-4">
+              <a href="#" class="position-relative">
+                <img
+                  src="https://d.newsweek.com/en/full/1602312/seattle-protest-zone.jpg?w=591&h=364&f=787ca4fe70bb1481d853d412f0c20782"
+                  alt=""
+                  class="card-img-top"
+                />
+                <small class="position-absolute py-2 px-3 text-primary">
+                  SPONSORED INSIGHT
+                </small>
+              </a>
+              <div class="px-3">
+                <h3 class="card-title mt-2">
+                  <a href="">
+                    What is an IB Private Education and Why is it so Important?
+                  </a>
+                </h3>
+                <p class="card-text pb-4">
+                  The aim of the IB is to offer the best possible international
+                  education for students of all backgrounds and from every part
+                  of the world. Find out more.
+                </p>
+              </div>
+            </div>
+            <div class="card mb-4">
+              <a href="#" class="position-relative">
+                <img
+                  src="https://d.newsweek.com/en/full/1602312/seattle-protest-zone.jpg?w=591&h=364&f=787ca4fe70bb1481d853d412f0c20782"
+                  alt=""
+                  class="card-img-top"
+                />
+                <small class="position-absolute py-2 px-3 text-primary">
+                  SPONSORED INSIGHT
+                </small>
+              </a>
+              <div class="px-3">
+                <h3 class="card-title mt-2">
+                  <a href="">
+                    What is an IB Private Education and Why is it so Important?
+                  </a>
+                </h3>
+                <p class="card-text pb-4">
+                  The aim of the IB is to offer the best possible international
+                  education for students of all backgrounds and from every part
+                  of the world. Find out more.
+                </p>
+              </div>
+            </div>
+            <div class="card mb-4">
+              <a href="#" class="position-relative">
+                <img
+                  src="https://d.newsweek.com/en/full/1602312/seattle-protest-zone.jpg?w=591&h=364&f=787ca4fe70bb1481d853d412f0c20782"
+                  alt=""
+                  class="card-img-top"
+                />
+                <small class="position-absolute py-2 px-3 text-primary">
+                  SPONSORED INSIGHT
+                </small>
+              </a>
+              <div class="px-3">
+                <h3 class="card-title mt-2">
+                  <a href="">
+                    What is an IB Private Education and Why is it so Important?
+                  </a>
+                </h3>
+                <p class="card-text pb-4">
+                  The aim of the IB is to offer the best possible international
+                  education for students of all backgrounds and from every part
+                  of the world. Find out more.
+                </p>
+              </div>
+            </div>
+            <div class="card mb-4">
+              <a href="#" class="position-relative">
+                <img
+                  src="https://d.newsweek.com/en/full/1602312/seattle-protest-zone.jpg?w=591&h=364&f=787ca4fe70bb1481d853d412f0c20782"
+                  alt=""
+                  class="card-img-top"
+                />
+                <small class="position-absolute py-2 px-3 text-primary">
+                  SPONSORED INSIGHT
+                </small>
+              </a>
+              <div class="px-3">
+                <h3 class="card-title mt-2">
+                  <a href="">
+                    What is an IB Private Education and Why is it so Important?
+                  </a>
+                </h3>
+                <p class="card-text pb-4">
+                  The aim of the IB is to offer the best possible international
+                  education for students of all backgrounds and from every part
+                  of the world. Find out more.
+                </p>
+              </div>
+            </div>
           </div>
-          <div class="col-10">
-            <h5 class="small-header">
-              <a href="">Seattle to Crack Down on Protesters Occupying Capitol Hill
-                After Shootings</a>
-            </h5>
-            <p class="small-header text-muted">
-              BY J. CHRISTIAN ADAMS AND HANS VON SPAKOVSKY
-            </p>
-          </div>
-        </div>
-        <hr class="mt-0" />
-        <div class="row no-gutters">
-          <div class="col-2 pr-3">
-            <img
-              src="https://d.newsweek.com/en/full/1601312/j-christian-adams-hans-von-spakovsky.png?w=150&h=150&f=ab899e5f7a2565301e49cc393100fd20"
-              class="img-full-width" alt="..." />
-          </div>
-          <div class="col-10">
-            <h5 class="small-header">
-              <a href="">Seattle to Crack Down on Protesters Occupying Capitol Hill
-                After Shootings</a>
-            </h5>
-            <p class="small-header text-muted">
-              BY J. CHRISTIAN ADAMS AND HANS VON SPAKOVSKY
-            </p>
-          </div>
-        </div>
-        <hr class="mt-0" />
-        <div class="row no-gutters">
-          <div class="col-2 pr-3">
-            <img
-              src="https://d.newsweek.com/en/full/1601312/j-christian-adams-hans-von-spakovsky.png?w=150&h=150&f=ab899e5f7a2565301e49cc393100fd20"
-              class="img-full-width" alt="..." />
-          </div>
-          <div class="col-10">
-            <h5 class="small-header">
-              <a href="">Seattle to Crack Down on Protesters Occupying Capitol Hill
-                After Shootings</a>
-            </h5>
-            <p class="small-header text-muted">
-              BY J. CHRISTIAN ADAMS AND HANS VON SPAKOVSKY
-            </p>
-          </div>
-        </div>
-      </div>
-      <!-- sponsored -->
-      <div class="bg-white mt-3 d-md-none">
-        <div class="card mb-4">
-          <a href="#" class="position-relative">
-            <img
-              src="https://d.newsweek.com/en/full/1602312/seattle-protest-zone.jpg?w=591&h=364&f=787ca4fe70bb1481d853d412f0c20782"
-              alt="" class="card-img-top" />
-            <small class="position-absolute py-2 px-3 text-primary">SPONSORED INSIGHT</small>
-          </a>
-          <div class="px-3">
-            <h3 class="card-title mt-2">
-              <a href="">What is an IB Private Education and Why is it so
-                Important?</a>
-            </h3>
-            <p class="card-text pb-4">
-              The aim of the IB is to offer the best possible international
-              education for students of all backgrounds and from every part
-              of the world. Find out more.
-            </p>
-          </div>
-        </div>
-        <div class="card mb-4">
-          <a href="#">
-            <img
-              src="https://d.newsweek.com/en/full/1602312/seattle-protest-zone.jpg?w=591&h=364&f=787ca4fe70bb1481d853d412f0c20782"
-              alt="" class="card-img-top" />
-          </a>
-          <div class="px-3">
-            <h3 class="card-title mt-2">
-              <a href="">What is an IB Private Education and Why is it so
-                Important?</a>
-            </h3>
-            <p class="card-text pb-4">
-              The aim of the IB is to offer the best possible international
-              education for students of all backgrounds and from every part
-              of the world. Find out more.
-            </p>
-          </div>
-        </div>
-        <div class="card mb-4">
-          <a href="#">
-            <img
-              src="https://d.newsweek.com/en/full/1602312/seattle-protest-zone.jpg?w=591&h=364&f=787ca4fe70bb1481d853d412f0c20782"
-              alt="" class="card-img-top" />
-          </a>
-          <div class="px-3">
-            <h3 class="card-title mt-2">
-              <a href="">Newsweek AMPLIFY Launches Strategic Partnership Solutions
-                for Brands</a>
-            </h3>
-            <p class="card-text pb-4">
-              The aim of the IB is to offer the best possible international
-              education for students of all backgrounds and from every part
-              of the world. Find out more.
-            </p>
-          </div>
-        </div>
-      </div>
-      <!-- more stories -->
-      <div class="bg-white mt-3 d-md-none">
-        <h5 class="section-title mt-4">MORE STORIES</h5>
-        <hr class="mt-0" />
-        <div>
-          <img src="https://d.newsweek.com/en/full/1602359/5g-mast-getty.jpg?w=95&h=95&f=991ddbe654347cd88e44c0c2787b98ed"
-            alt="" class="float-left pr-3" />
-          <div>
-            <h3 class="mt-2 more-stories">
-              <a href="">Seattle to Crack Down on Protesters Occupying Capitol Hill
-                After Shootings</a>
-            </h3>
-            <p class="card-text pb-4">
-              A growing number of colleges and universities, including
-              elites like Brown and Georgetown along with major public
-              school systems, are being sued by students dissatisfied with
-              their pandemic online learning experience who now want at
-              least part of their tuition money back.
-            </p>
-          </div>
-        </div>
-        <hr class="mt-0" />
-        <div>
-          <img src="https://d.newsweek.com/en/full/1602359/5g-mast-getty.jpg?w=95&h=95&f=991ddbe654347cd88e44c0c2787b98ed"
-            alt="" class="float-left pr-3" />
-          <div>
-            <h3 class="mt-2 more-stories">
-              <a href="">Seattle to Crack Down on Protesters Occupying Capitol Hill
-                After Shootings</a>
-            </h3>
-            <p class="card-text pb-4">
-              Houston Police Chief Art Acevedo said no-one was injured in
-              the attack on Southeast Houston police station.
-            </p>
-          </div>
-        </div>
-        <hr class="mt-0" />
-        <div>
-          <img src="https://d.newsweek.com/en/full/1602359/5g-mast-getty.jpg?w=95&h=95&f=991ddbe654347cd88e44c0c2787b98ed"
-            alt="" class="float-left pr-3" />
-          <div>
-            <h3 class="mt-2 more-stories">
-              <a href="">Seattle to Crack Down on Protesters Occupying Capitol Hill
-                After Shootings</a>
-            </h3>
-            <p class="card-text pb-4">
-              A growing number of colleges and universities, including
-              elites like Brown and Georgetown along with major public
-              school systems, are being sued by students dissatisfied with
-              their pandemic online learning experience who now want at
-              least part of their tuition money back.
-            </p>
-          </div>
-        </div>
-        <hr class="mt-0" />
-        <div>
-          <img src="https://d.newsweek.com/en/full/1602359/5g-mast-getty.jpg?w=95&h=95&f=991ddbe654347cd88e44c0c2787b98ed"
-            alt="" class="float-left pr-3" />
-          <div>
-            <h3 class="mt-2 more-stories">
-              <a href="">Seattle to Crack Down on Protesters Occupying Capitol Hill
-                After Shootings</a>
-            </h3>
-            <p class="card-text pb-4">
-              Houston Police Chief Art Acevedo said no-one was injured in
-              the attack on Southeast Houston police station.
-            </p>
-          </div>
-        </div>
-        <hr class="mt-0" />
-        <div>
-          <img src="https://d.newsweek.com/en/full/1602359/5g-mast-getty.jpg?w=95&h=95&f=991ddbe654347cd88e44c0c2787b98ed"
-            alt="" class="float-left pr-3" />
-          <div>
-            <h3 class="mt-2 more-stories">
-              <a href="">Seattle to Crack Down on Protesters Occupying Capitol Hill
-                After Shootings</a>
-            </h3>
-            <p class="card-text pb-4">
-              A growing number of colleges and universities, including
-              elites like Brown and Georgetown along with major public
-              school systems, are being sued by students dissatisfied with
-              their pandemic online learning experience who now want at
-              least part of their tuition money back.
-            </p>
-          </div>
-        </div>
-        <hr class="mt-0" />
-        <div>
-          <img src="https://d.newsweek.com/en/full/1602359/5g-mast-getty.jpg?w=95&h=95&f=991ddbe654347cd88e44c0c2787b98ed"
-            alt="" class="float-left pr-3" />
-          <div>
-            <h3 class="mt-2 more-stories">
-              <a href="">Seattle to Crack Down on Protesters Occupying Capitol Hill
-                After Shootings</a>
-            </h3>
-            <p class="card-text pb-4">
-              Houston Police Chief Art Acevedo said no-one was injured in
-              the attack on Southeast Houston police station.
-            </p>
-          </div>
-        </div>
-        <hr class="mt-0" />
-        <div>
-          <img src="https://d.newsweek.com/en/full/1602359/5g-mast-getty.jpg?w=95&h=95&f=991ddbe654347cd88e44c0c2787b98ed"
-            alt="" class="float-left pr-3" />
-          <div>
-            <h3 class="mt-2 more-stories">
-              <a href="">Seattle to Crack Down on Protesters Occupying Capitol Hill
-                After Shootings</a>
-            </h3>
-            <p class="card-text pb-4">
-              A growing number of colleges and universities, including
-              elites like Brown and Georgetown along with major public
-              school systems, are being sued by students dissatisfied with
-              their pandemic online learning experience who now want at
-              least part of their tuition money back.
-            </p>
-          </div>
-        </div>
-        <hr class="mt-0" />
-        <div>
-          <img src="https://d.newsweek.com/en/full/1602359/5g-mast-getty.jpg?w=95&h=95&f=991ddbe654347cd88e44c0c2787b98ed"
-            alt="" class="float-left pr-3" />
-          <div>
-            <h3 class="mt-2 more-stories">
-              <a href="">Seattle to Crack Down on Protesters Occupying Capitol Hill
-                After Shootings</a>
-            </h3>
-            <p class="card-text pb-4">
-              Houston Police Chief Art Acevedo said no-one was injured in
-              the attack on Southeast Houston police station.
-            </p>
-          </div>
-        </div>
-        <hr class="mt-0" />
-        <div>
-          <img src="https://d.newsweek.com/en/full/1602359/5g-mast-getty.jpg?w=95&h=95&f=991ddbe654347cd88e44c0c2787b98ed"
-            alt="" class="float-left pr-3" />
-          <div>
-            <h3 class="mt-2 more-stories">
-              <a href="">Seattle to Crack Down on Protesters Occupying Capitol Hill
-                After Shootings</a>
-            </h3>
-            <p class="card-text pb-4">
-              A growing number of colleges and universities, including
-              elites like Brown and Georgetown along with major public
-              school systems, are being sued by students dissatisfied with
-              their pandemic online learning experience who now want at
-              least part of their tuition money back.
-            </p>
-          </div>
-        </div>
-        <hr class="mt-0" />
-        <div>
-          <img src="https://d.newsweek.com/en/full/1602359/5g-mast-getty.jpg?w=95&h=95&f=991ddbe654347cd88e44c0c2787b98ed"
-            alt="" class="float-left pr-3" />
-          <div>
-            <h3 class="mt-2 more-stories">
-              <a href="">Seattle to Crack Down on Protesters Occupying Capitol Hill
-                After Shootings</a>
-            </h3>
-            <p class="card-text pb-4">
-              Houston Police Chief Art Acevedo said no-one was injured in
-              the attack on Southeast Houston police station.
-            </p>
-          </div>
-        </div>
-        <hr class="mt-0" />
-        <div>
-          <img src="https://d.newsweek.com/en/full/1602359/5g-mast-getty.jpg?w=95&h=95&f=991ddbe654347cd88e44c0c2787b98ed"
-            alt="" class="float-left pr-3" />
-          <div>
-            <h3 class="mt-2 more-stories">
-              <a href="">Seattle to Crack Down on Protesters Occupying Capitol Hill
-                After Shootings</a>
-            </h3>
-            <p class="card-text pb-4">
-              A growing number of colleges and universities, including
-              elites like Brown and Georgetown along with major public
-              school systems, are being sued by students dissatisfied with
-              their pandemic online learning experience who now want at
-              least part of their tuition money back.
-            </p>
-          </div>
-        </div>
-      </div>
-      <!-- my turn -->
-      <div class="bg-white mt-4 col-12 d-md-none">
-        <h5 class="section-title mt-4">MY TURN</h5>
-        <a href="">
-          <img
-            src="https://d.newsweek.com/en/full/1601757/racism-fathers-day-black-lives-matter-father.jpg?w=397&h=397&f=a558e40ae45f8c6df39831cfe21ce8f7"
-            alt="" class="img-full-width" />
-        </a>
-        <h5 class="section-title my-3">
-          'I Am A Black Father, It's Impossible to Prepare Your Kids For
-          Racism'
-        </h5>
-        <a href="">
-          <img
-            src="https://d.newsweek.com/en/full/1601757/racism-fathers-day-black-lives-matter-father.jpg?w=397&h=397&f=a558e40ae45f8c6df39831cfe21ce8f7"
-            alt="" class="img-full-width" />
-        </a>
-        <h5 class="section-title my-3">
-          'I Am A Black Father, It's Impossible to Prepare Your Kids For
-          Racism'
-        </h5>
-        <a href="">
-          <img
-            src="https://d.newsweek.com/en/full/1601757/racism-fathers-day-black-lives-matter-father.jpg?w=397&h=397&f=a558e40ae45f8c6df39831cfe21ce8f7"
-            alt="" class="img-full-width" />
-        </a>
-        <h5 class="section-title my-3">
-          'I Am A Black Father, It's Impossible to Prepare Your Kids For
-          Racism'
-        </h5>
-  
-        <!-- CULTURE & TRAVEL -->
-        <h5 class="section-title mt-4">CULTURE & TRAVEL</h5>
-        <div class="card border-0">
-          <a href="#" class="position-relative">
+        </section>
+
+        <div class="bg-white mt-4 col-12 d-md-none">
+          <h5 class="section-title mt-4">MY TURN</h5>
+          <a href="">
             <img
               src="https://d.newsweek.com/en/full/1601757/racism-fathers-day-black-lives-matter-father.jpg?w=397&h=397&f=a558e40ae45f8c6df39831cfe21ce8f7"
-              alt="" class="card-img-top" />
-            <small class="position-absolute py-1 px-1 culture">CORONAVIRUS</small>
+              alt=""
+              class="img-full-width"
+            />
           </a>
           <h5 class="section-title my-3">
             'I Am A Black Father, It's Impossible to Prepare Your Kids For
             Racism'
           </h5>
-        </div>
-        <div class="card border-0">
-          <a href="#" class="position-relative">
+          <a href="">
             <img
               src="https://d.newsweek.com/en/full/1601757/racism-fathers-day-black-lives-matter-father.jpg?w=397&h=397&f=a558e40ae45f8c6df39831cfe21ce8f7"
-              alt="" class="card-img-top" />
-            <small class="position-absolute py-1 px-1 culture">CORONAVIRUS</small>
+              alt=""
+              class="img-full-width"
+            />
           </a>
           <h5 class="section-title my-3">
             'I Am A Black Father, It's Impossible to Prepare Your Kids For
             Racism'
           </h5>
-        </div>
-        <div class="card border-0">
-          <a href="#" class="position-relative">
+          <a href="">
             <img
               src="https://d.newsweek.com/en/full/1601757/racism-fathers-day-black-lives-matter-father.jpg?w=397&h=397&f=a558e40ae45f8c6df39831cfe21ce8f7"
-              alt="" class="card-img-top" />
-            <small class="position-absolute py-1 px-1 culture">CORONAVIRUS</small>
+              alt=""
+              class="img-full-width"
+            />
           </a>
           <h5 class="section-title my-3">
             'I Am A Black Father, It's Impossible to Prepare Your Kids For
             Racism'
           </h5>
+
+          <!-- CULTURE & TRAVEL -->
+          <h5 class="section-title mt-4">CULTURE & TRAVEL</h5>
+          <div class="card border-0">
+            <a href="#" class="position-relative">
+              <img
+                src="https://d.newsweek.com/en/full/1601757/racism-fathers-day-black-lives-matter-father.jpg?w=397&h=397&f=a558e40ae45f8c6df39831cfe21ce8f7"
+                alt=""
+                class="card-img-top"
+              />
+              <small class="position-absolute py-1 px-1 culture">
+                CORONAVIRUS
+              </small>
+            </a>
+            <h5 class="section-title my-3">
+              'I Am A Black Father, It's Impossible to Prepare Your Kids For
+              Racism'
+            </h5>
+          </div>
+          <div class="card border-0">
+            <a href="#" class="position-relative">
+              <img
+                src="https://d.newsweek.com/en/full/1601757/racism-fathers-day-black-lives-matter-father.jpg?w=397&h=397&f=a558e40ae45f8c6df39831cfe21ce8f7"
+                alt=""
+                class="card-img-top"
+              />
+              <small class="position-absolute py-1 px-1 culture">
+                CORONAVIRUS
+              </small>
+            </a>
+            <h5 class="section-title my-3">
+              'I Am A Black Father, It's Impossible to Prepare Your Kids For
+              Racism'
+            </h5>
+          </div>
+          <div class="card border-0">
+            <a href="#" class="position-relative">
+              <img
+                src="https://d.newsweek.com/en/full/1601757/racism-fathers-day-black-lives-matter-father.jpg?w=397&h=397&f=a558e40ae45f8c6df39831cfe21ce8f7"
+                alt=""
+                class="card-img-top"
+              />
+              <small class="position-absolute py-1 px-1 culture">
+                CORONAVIRUS
+              </small>
+            </a>
+            <h5 class="section-title my-3">
+              'I Am A Black Father, It's Impossible to Prepare Your Kids For
+              Racism'
+            </h5>
+          </div>
         </div>
-      </div>
-      <!-- sponsored2 -->
-      <div class="bg-white pt-4 col-md-6 offset-md-3 d-lg-none">
-        <div class="card mb-4">
-          <a href="#" class="position-relative">
+        <section class="magazine bg-white">
+          <h3 class="text-center">
+            <img src="./assets/img/newsweek-n-logo.png" alt="" width="35" />
+            IN THE MAGAZINE
+          </h3>
+          <hr />
+          <div class="row">
+            <div class="col-md-3 mt-4">
+              <img
+                class="img-full-width"
+                src="https://d.newsweek.com/en/full/1604706/cul-ps-beauvais.webp?w=466&h=311&l=52&t=29&q=90&f=e16503359619806ae393f097d88886a3"
+                alt=""
+              />
+              <div class="magazine-capture">
+                <small class="bg-danger text-white">COVER</small>
+                <small class="text-danger">BUSINESS</small>
+              </div>
+              <h3 class="more-stories">
+                <a href="#">
+                  On Tiananmen Anniversary, Hong Kong Protesters Brace for
+                  Chinese Crackdown
+                </a>
+              </h3>
+            </div>
+            <div class="col-md-3 mt-4">
+              <img
+                class="img-full-width"
+                src="https://d.newsweek.com/en/full/1604216/good-list-banner.webp?w=466&h=311&q=90&f=2062901c3efd89779019feae0efa97da"
+                alt=""
+              />
+              <div class="magazine-capture">
+                <small class="bg-danger text-white">COVER</small>
+                <small class="text-danger">WORLD</small>
+              </div>
+              <h3 class="more-stories">
+                <a href="#">
+                  BLM Co-Founder: 'The Entire World Is Saying Black Lives Matter
+                  Now'
+                </a>
+              </h3>
+            </div>
+            <div class="col-md-3 mt-4">
+              <img
+                class="img-full-width"
+                src="https://d.newsweek.com/en/full/1603672/fe-blm-global-patrice-culler.webp?w=466&h=311&l=51&t=51&q=90&f=100b30ef6ea38176ffe7668da0050621"
+                alt=""
+              />
+              <div class="magazine-capture">
+                <small class="bg-danger text-white">PERISCOPE</small>
+                <small class="text-danger">OPINION</small>
+              </div>
+              <h3 class="more-stories">
+                <a href="#">
+                  On Tiananmen Anniversary, Hong Kong Protesters Brace for
+                  Chinese Crackdown
+                </a>
+              </h3>
+            </div>
+            <div class="col-md-3 mt-4">
+              <img
+                class="img-full-width"
+                src="https://d.newsweek.com/en/full/1606841/joel-schumacher.webp?w=466&h=311&l=38&t=47&q=90&f=80d7e02eeb699349e95fd281266ff38c"
+                alt=""
+              />
+              <div class="magazine-capture">
+                <small class="bg-danger text-white">PERISCOPE</small>
+                <small class="text-danger">MY TURN</small>
+              </div>
+              <h3 class="more-stories">
+                <a href="#">
+                  Garcelle Beauvais Makes 'RHONY' History as First Black Cast
+                  Member
+                </a>
+              </h3>
+            </div>
+            <div class="col-md-3 mt-4">
+              <img
+                class="img-full-width"
+                src="https://d.newsweek.com/en/full/1596154/new-york-riots-protests-george-floyd.webp?w=767&h=512&q=90&f=0a8ee6f33e4a59f3fb299182e97ae110"
+                alt=""
+              />
+              <div class="magazine-capture">
+                <small class="bg-danger text-white">COVER</small>
+                <small class="text-danger">WORLD</small>
+              </div>
+              <h3 class="more-stories">
+                <a href="#">
+                  On Tiananmen Anniversary, Hong Kong Protesters Brace for
+                  Chinese Crackdown
+                </a>
+              </h3>
+            </div>
+            <div class="col-md-3 mt-4">
+              <img
+                class="img-full-width"
+                src="https://d.newsweek.com/en/full/1597714/cul-williemays-banner.webp?w=767&h=512&l=47&t=32&q=90&f=a29480bf3b4990127e1330949e0f9056"
+                alt=""
+              />
+              <div class="magazine-capture">
+                <small class="bg-danger text-white">DOWNTIME</small>
+                <small class="text-danger">CULTURE</small>
+              </div>
+              <h3 class="more-stories">
+                <a href="#">
+                  Garcelle Beauvais Makes 'RHONY' History as First Black Cast
+                  Member
+                </a>
+              </h3>
+            </div>
+            <div class="col-md-3 mt-4">
+              <img
+                class="img-full-width"
+                src="https://d.newsweek.com/en/full/1597051/cul-ps-apatow.webp?w=767&h=512&l=46&t=41&q=90&f=1d5ac3f7d2e861180aed04ca6fa15f2d"
+                alt=""
+              />
+              <div class="magazine-capture">
+                <small class="bg-danger text-white">COVER</small>
+                <small class="text-danger">WORLD</small>
+              </div>
+              <h3 class="more-stories">
+                <a href="#">
+                  Garcelle Beauvais Makes 'RHONY' History as First Black Cast
+                  Member
+                </a>
+              </h3>
+            </div>
+            <div class="col-md-3 mt-4">
+              <img
+                class="img-full-width"
+                src="https://d.newsweek.com/en/full/1601973/georgetown-u.webp?w=466&h=311&q=90&f=f41a002e0e811e68409a9ef490b86ec1"
+                alt=""
+              />
+              <div class="magazine-capture">
+                <small class="bg-danger text-white">DOWNTIME</small>
+                <small class="text-danger">CULTURE</small>
+              </div>
+              <h3 class="more-stories">
+                <a href="#">
+                  On Tiananmen Anniversary, Hong Kong Protesters Brace for
+                  Chinese Crackdown
+                </a>
+              </h3>
+            </div>
+          </div>
+        </section>
+        <section class="editors-pick px-3 pt-4 bg-white">
+          <h3 class="text-center">
+            <img src="./assets/img/newsweek-n-logo.png" alt="" width="35" />
+            EDITOR'S PICK
+          </h3>
+          <hr class="py-1" />
+          <div class="row">
+            <div class="col-md-6 col-lg-3 mt-2">
+              <div class="card border-0">
+                <a href="#" class="position-relative">
+                  <img
+                    src="https://d.newsweek.com/en/full/1608828/florida-covid-19.webp?w=397&h=265&f=95739711fde4a62712314404ba6d62af"
+                    alt=""
+                    class="card-img-top img-full-width"
+                  />
+                  <small class="position-absolute py-1 px-1 editor">
+                    TECH & SCIENCE
+                  </small>
+                </a>
+                <h3 class="card-title mt-2">
+                  <a href="">
+                    Sahara Dust Storm Tracker: Where Is the Plume Now and What
+                    Is Its Path?
+                  </a>
+                </h3>
+                <p>
+                  The latest record increase in virus cases trails more than one
+                  month of rising diagnosis numbers in Florida.
+                </p>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-3 pt-3">
+              <div class="card border-0">
+                <a href="#" class="position-relative">
+                  <img
+                    src="https://d.newsweek.com/en/full/1602886/mark-zuckerberg.webp?w=767&h=512&f=47462a7788f535968aea0115315a58a5"
+                    alt=""
+                    class="card-img-top img-full-width"
+                  />
+                  <small class="position-absolute py-1 px-1 editor">
+                    TECH & SCIENCE
+                  </small>
+                </a>
+                <h3 class="card-title mt-2">
+                  <a href="">
+                    Facebook Acts Faster on Hate Speech Than Twitter and
+                    YouTube, Report Shows
+                  </a>
+                </h3>
+                <p>
+                  "Best day ever!" exclaimed one Magic Kingdom attendee in the
+                  background of a video posted to the Blog Mickey twitter
+                  account.
+                </p>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-3 pt-3">
+              <div class="card border-0">
+                <a href="#" class="position-relative">
+                  <img
+                    src="https://d.newsweek.com/en/full/1608784/seattle-police-department-chief-carmen-best.webp?w=397&h=265&f=23e0987e0f929e8d4df671e98eb08f21"
+                    alt=""
+                    class="card-img-top img-full-width"
+                  />
+                  <small class="position-absolute py-1 px-1 editor">NEWS</small>
+                </a>
+                <h3 class="card-title mt-2">
+                  <a href="">
+                    Meghan Markle Most 'Misrepresented Woman in the World,'
+                    Biography Says
+                  </a>
+                </h3>
+                <p>
+                  "Best day ever!" exclaimed one Magic Kingdom attendee in the
+                  background of a video posted to the Blog Mickey twitter
+                  account.
+                </p>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-3 pt-3">
+              <div class="card border-0">
+                <a href="#" class="position-relative">
+                  <img
+                    src="https://d.newsweek.com/en/full/1602842/brendon-urie.webp?w=767&h=512&f=854a33bde06a44d4e86906808e596c15"
+                    alt=""
+                    class="card-img-top img-full-width"
+                  />
+                  <small class="position-absolute py-1 px-1 editor">
+                    CULTURE
+                  </small>
+                </a>
+                <h3 class="card-title mt-2">
+                  <a href="">
+                    Brendon Urie Tells Trump to Stop Playing Panic! At The Disco
+                    at Rallies
+                  </a>
+                </h3>
+                <p>
+                  Trump walked onto the stage at a campaign rally in Phoenix,
+                  Arizona to one of Urie's bands' hit single, 'High Hopes.'
+                </p>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-3 pt-3">
+              <div class="card border-0">
+                <a href="#" class="position-relative">
+                  <img
+                    src="https://d.newsweek.com/en/full/1602474/pompeo-bolton.webp?w=767&h=512&f=845b56272d513ede86118201b1535529"
+                    alt=""
+                    class="card-img-top img-full-width"
+                  />
+                  <small class="position-absolute py-1 px-1 editor">U.S.</small>
+                </a>
+                <h3 class="card-title mt-2">
+                  <a href="">
+                    Pompeo Compares John Bolton to Edward Snowden, Who He Wanted
+                    Executed
+                  </a>
+                </h3>
+                <p>
+                  In 2013, Bolton told Fox News that Snowden "committed treason"
+                  and "he ought to swing from a tall oak tree."
+                </p>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-3 pt-3">
+              <div class="card border-0">
+                <a href="#" class="position-relative">
+                  <img
+                    src="https://d.newsweek.com/en/full/1602474/pompeo-bolton.webp?w=767&h=512&f=845b56272d513ede86118201b1535529"
+                    alt=""
+                    class="card-img-top img-full-width"
+                  />
+                  <small class="position-absolute py-1 px-1 editor">U.S.</small>
+                </a>
+                <h3 class="card-title mt-2">
+                  <a href="">
+                    Pompeo Compares John Bolton to Edward Snowden, Who He Wanted
+                    Executed
+                  </a>
+                </h3>
+                <p>
+                  In 2013, Bolton told Fox News that Snowden "committed treason"
+                  and "he ought to swing from a tall oak tree."
+                </p>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-3 pt-3">
+              <div class="card border-0">
+                <a href="#" class="position-relative">
+                  <img
+                    src="https://d.newsweek.com/en/full/1602607/george-floyd-minneapolis-protest.webp?w=397&h=265&f=9053240cc083bd2340b6cc78bd7b1e6d"
+                    alt=""
+                    class="card-img-top img-full-width"
+                  />
+                  <small class="position-absolute py-1 px-1 editor">
+                    TECH & SCIENCE
+                  </small>
+                </a>
+                <h3 class="card-title mt-2">
+                  <a href="">
+                    Facebook Acts Faster on Hate Speech Than Twitter and
+                    YouTube, Report Shows
+                  </a>
+                </h3>
+                <p>
+                  "While we recognize we have more to do, these results suggest
+                  we are moving in the right direction and have systems in place
+                  which continue to lead our industry," one Facebook executive
+                  said.
+                </p>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-3 pt-3">
+              <div class="card border-0">
+                <a href="#" class="position-relative">
+                  <img
+                    src="https://d.newsweek.com/en/full/1602436/millions-americans-still-missing-stimulus-checks.webp?w=397&h=265&f=6136772124121a689836a9590f06e14c"
+                    alt=""
+                    class="card-img-top img-full-width"
+                  />
+                  <small class="position-absolute py-1 px-1 editor">
+                    TECH & SCIENCE
+                  </small>
+                </a>
+                <h3 class="card-title mt-2">
+                  <a href="">
+                    Facebook Acts Faster on Hate Speech Than Twitter and
+                    YouTube, Report Shows
+                  </a>
+                </h3>
+                <p>
+                  "While we recognize we have more to do, these results suggest
+                  we are moving in the right direction and have systems in place
+                  which continue to lead our industry," one Facebook executive
+                  said.
+                </p>
+              </div>
+            </div>
+          </div>
+          <hr />
+        </section>
+        <section class="last-news px-3 bg-white">
+          <h4 class="us-header">U.S</h4>
+          <div class="row">
+            <div class="col-md-4 mt-3">
+              <img
+                class="img-full-width"
+                src="https://d.newsweek.com/en/full/1601477/washington-dc-george-floyd-protest-may-2020.webp?w=767&h=512&f=08bafa7cd32ce062e54225343e293224"
+                alt=""
+              />
+              <h3 class="card-title mt-2">
+                <a href="">
+                  Trump Demands End to Flag Burning as Protests Rage, Statues
+                  Fall
+                </a>
+              </h3>
+            </div>
+            <div class="col-md-4 mt-3">
+              <img
+                class="img-full-width"
+                src="https://d.newsweek.com/en/full/1601477/washington-dc-george-floyd-protest-may-2020.webp?w=767&h=512&f=08bafa7cd32ce062e54225343e293224"
+                alt=""
+              />
+              <h3 class="card-title mt-2">
+                <a href="">
+                  Trump Demands End to Flag Burning as Protests Rage, Statues
+                  Fall
+                </a>
+              </h3>
+            </div>
+            <div class="col-12 col-md-4">
+              <div class="row segment-third pb-3">
+                <img
+                  src="https://d.newsweek.com/en/full/1598308/police.webp?w=397&h=265&f=cd65e0722007125e80ebae8f4db0196e"
+                  alt=""
+                  class="segment-img"
+                />
+                <p class="segment-text highlight">
+                  Choke Holds Are Still Permitted at Two South Florida Police
+                  Departments
+                </p>
+              </div>
+              <div class="row segment-third bod py-3">
+                <img
+                  src="https://d.newsweek.com/en/full/1598308/police.webp?w=397&h=265&f=cd65e0722007125e80ebae8f4db0196e"
+                  alt="US image"
+                  class="segment-img"
+                />
+                <p class="segment-text highlight">
+                  Protesters Topple, Burn Christopher Columbus Statue Before
+                  Tossing in Lake
+                </p>
+              </div>
+              <div class="row segment-third bod py-3">
+                <img
+                  src="https://d.newsweek.com/en/full/1598308/police.webp?w=397&h=265&f=cd65e0722007125e80ebae8f4db0196e"
+                  alt="US image"
+                  class="segment-img"
+                />
+                <p class="segment-text highlight">
+                  California Teacher Threatens to Kill Protester and Daughter in
+                  Viral Video
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <h4 class="us-header">WORLD</h4>
+        <div class="row">
+          <div class="col-md-4 mt-3">
             <img
-              src="https://d.newsweek.com/en/full/1602312/seattle-protest-zone.jpg?w=591&h=364&f=787ca4fe70bb1481d853d412f0c20782"
-              alt="" class="card-img-top" />
-            <small class="position-absolute py-2 px-3 text-primary">SPONSORED INSIGHT</small>
-          </a>
-          <div class="px-3">
+              class="img-full-width"
+              src="https://d.newsweek.com/en/full/1601477/washington-dc-george-floyd-protest-may-2020.webp?w=767&h=512&f=08bafa7cd32ce062e54225343e293224"
+              alt=""
+            />
             <h3 class="card-title mt-2">
-              <a href="">What is an IB Private Education and Why is it so
-                Important?</a>
+              <a href="">
+                Trump Demands End to Flag Burning as Protests Rage, Statues Fall
+              </a>
             </h3>
-            <p class="card-text pb-4">
-              The aim of the IB is to offer the best possible international
-              education for students of all backgrounds and from every part
-              of the world. Find out more.
-            </p>
           </div>
-        </div>
-        <div class="card mb-4">
-          <a href="#" class="position-relative">
+          <div class="col-md-4 mt-3">
             <img
-              src="https://d.newsweek.com/en/full/1602312/seattle-protest-zone.jpg?w=591&h=364&f=787ca4fe70bb1481d853d412f0c20782"
-              alt="" class="card-img-top" />
-            <small class="position-absolute py-2 px-3 text-primary">SPONSORED INSIGHT</small>
-          </a>
-          <div class="px-3">
+              class="img-full-width"
+              src="https://d.newsweek.com/en/full/1601477/washington-dc-george-floyd-protest-may-2020.webp?w=767&h=512&f=08bafa7cd32ce062e54225343e293224"
+              alt=""
+            />
             <h3 class="card-title mt-2">
-              <a href="">What is an IB Private Education and Why is it so
-                Important?</a>
+              <a href="">
+                Trump Demands End to Flag Burning as Protests Rage, Statues Fall
+              </a>
             </h3>
-            <p class="card-text pb-4">
-              The aim of the IB is to offer the best possible international
-              education for students of all backgrounds and from every part
-              of the world. Find out more.
-            </p>
+          </div>
+          <div class="col-12 col-md-4">
+            <div class="row segment-third pb-3">
+              <img
+                src="https://d.newsweek.com/en/full/1598308/police.webp?w=397&h=265&f=cd65e0722007125e80ebae8f4db0196e"
+                alt=""
+                class="segment-img"
+              />
+              <p class="segment-text highlight">
+                Choke Holds Are Still Permitted at Two South Florida Police
+                Departments
+              </p>
+            </div>
+            <div class="row segment-third bod py-3">
+              <img
+                src="https://d.newsweek.com/en/full/1598308/police.webp?w=397&h=265&f=cd65e0722007125e80ebae8f4db0196e"
+                alt="US image"
+                class="segment-img"
+              />
+              <p class="segment-text highlight">
+                Protesters Topple, Burn Christopher Columbus Statue Before
+                Tossing in Lake
+              </p>
+            </div>
+            <div class="row segment-third bod py-3">
+              <img
+                src="https://d.newsweek.com/en/full/1598308/police.webp?w=397&h=265&f=cd65e0722007125e80ebae8f4db0196e"
+                alt="US image"
+                class="segment-img"
+              />
+              <p class="segment-text highlight">
+                California Teacher Threatens to Kill Protester and Daughter in
+                Viral Video
+              </p>
+            </div>
           </div>
         </div>
-        <div class="card mb-4">
-          <a href="#" class="position-relative">
+
+        <h4 class="us-header">TECH & SCIENCE</h4>
+        <div class="row">
+          <div class="col-md-4 mt-3">
             <img
-              src="https://d.newsweek.com/en/full/1602312/seattle-protest-zone.jpg?w=591&h=364&f=787ca4fe70bb1481d853d412f0c20782"
-              alt="" class="card-img-top" />
-            <small class="position-absolute py-2 px-3 text-primary">SPONSORED INSIGHT</small>
-          </a>
-          <div class="px-3">
+              class="img-full-width"
+              src="https://d.newsweek.com/en/full/1601477/washington-dc-george-floyd-protest-may-2020.webp?w=767&h=512&f=08bafa7cd32ce062e54225343e293224"
+              alt=""
+            />
             <h3 class="card-title mt-2">
-              <a href="">What is an IB Private Education and Why is it so
-                Important?</a>
+              <a href="">
+                Trump Demands End to Flag Burning as Protests Rage, Statues Fall
+              </a>
             </h3>
-            <p class="card-text pb-4">
-              The aim of the IB is to offer the best possible international
-              education for students of all backgrounds and from every part
-              of the world. Find out more.
-            </p>
           </div>
-        </div>
-        <div class="card mb-4">
-          <a href="#" class="position-relative">
+          <div class="col-md-4 mt-3">
             <img
-              src="https://d.newsweek.com/en/full/1602312/seattle-protest-zone.jpg?w=591&h=364&f=787ca4fe70bb1481d853d412f0c20782"
-              alt="" class="card-img-top" />
-            <small class="position-absolute py-2 px-3 text-primary">SPONSORED INSIGHT</small>
-          </a>
-          <div class="px-3">
+              class="img-full-width"
+              src="https://d.newsweek.com/en/full/1601477/washington-dc-george-floyd-protest-may-2020.webp?w=767&h=512&f=08bafa7cd32ce062e54225343e293224"
+              alt=""
+            />
             <h3 class="card-title mt-2">
-              <a href="">What is an IB Private Education and Why is it so
-                Important?</a>
+              <a href="">
+                Trump Demands End to Flag Burning as Protests Rage, Statues Fall
+              </a>
             </h3>
-            <p class="card-text pb-4">
-              The aim of the IB is to offer the best possible international
-              education for students of all backgrounds and from every part
-              of the world. Find out more.
-            </p>
+          </div>
+          <div class="col-12 col-md-4">
+            <div class="row segment-third pb-3">
+              <img
+                src="https://d.newsweek.com/en/full/1598308/police.webp?w=397&h=265&f=cd65e0722007125e80ebae8f4db0196e"
+                alt=""
+                class="segment-img"
+              />
+              <p class="segment-text highlight">
+                Choke Holds Are Still Permitted at Two South Florida Police
+                Departments
+              </p>
+            </div>
+            <div class="row segment-third bod py-3">
+              <img
+                src="https://d.newsweek.com/en/full/1598308/police.webp?w=397&h=265&f=cd65e0722007125e80ebae8f4db0196e"
+                alt="US image"
+                class="segment-img"
+              />
+              <p class="segment-text highlight">
+                Protesters Topple, Burn Christopher Columbus Statue Before
+                Tossing in Lake
+              </p>
+            </div>
+            <div class="row segment-third bod py-3">
+              <img
+                src="https://d.newsweek.com/en/full/1598308/police.webp?w=397&h=265&f=cd65e0722007125e80ebae8f4db0196e"
+                alt="US image"
+                class="segment-img"
+              />
+              <p class="segment-text highlight">
+                California Teacher Threatens to Kill Protester and Daughter in
+                Viral Video
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <h4 class="us-header">CULTURE</h4>
+        <div class="row">
+          <div class="col-md-4 mt-3">
+            <img
+              class="img-full-width"
+              src="https://d.newsweek.com/en/full/1601477/washington-dc-george-floyd-protest-may-2020.webp?w=767&h=512&f=08bafa7cd32ce062e54225343e293224"
+              alt=""
+            />
+            <h3 class="card-title mt-2">
+              <a href="">
+                Trump Demands End to Flag Burning as Protests Rage, Statues Fall
+              </a>
+            </h3>
+          </div>
+          <div class="col-md-4 mt-3">
+            <img
+              class="img-full-width"
+              src="https://d.newsweek.com/en/full/1601477/washington-dc-george-floyd-protest-may-2020.webp?w=767&h=512&f=08bafa7cd32ce062e54225343e293224"
+              alt=""
+            />
+            <h3 class="card-title mt-2">
+              <a href="">
+                Trump Demands End to Flag Burning as Protests Rage, Statues Fall
+              </a>
+            </h3>
+          </div>
+          <div class="col-12 col-md-4">
+            <div class="row segment-third pb-3">
+              <img
+                src="https://d.newsweek.com/en/full/1598308/police.webp?w=397&h=265&f=cd65e0722007125e80ebae8f4db0196e"
+                alt=""
+                class="segment-img"
+              />
+              <p class="segment-text highlight">
+                Choke Holds Are Still Permitted at Two South Florida Police
+                Departments
+              </p>
+            </div>
+            <div class="row segment-third bod py-3">
+              <img
+                src="https://d.newsweek.com/en/full/1598308/police.webp?w=397&h=265&f=cd65e0722007125e80ebae8f4db0196e"
+                alt="US image"
+                class="segment-img"
+              />
+              <p class="segment-text highlight">
+                Protesters Topple, Burn Christopher Columbus Statue Before
+                Tossing in Lake
+              </p>
+            </div>
+            <div class="row segment-third bod py-3">
+              <img
+                src="https://d.newsweek.com/en/full/1598308/police.webp?w=397&h=265&f=cd65e0722007125e80ebae8f4db0196e"
+                alt="US image"
+                class="segment-img"
+              />
+              <p class="segment-text highlight">
+                California Teacher Threatens to Kill Protester and Daughter in
+                Viral Video
+              </p>
+            </div>
           </div>
         </div>
       </div>
-    </section>
-  
-  
-  
-  
-    <div class="bg-white mt-4 col-12 d-md-none">
-      <h5 class="section-title mt-4">MY TURN</h5>
-      <a href="">
-        <img
-          src="https://d.newsweek.com/en/full/1601757/racism-fathers-day-black-lives-matter-father.jpg?w=397&h=397&f=a558e40ae45f8c6df39831cfe21ce8f7"
-          alt="" class="img-full-width" />
-      </a>
-      <h5 class="section-title my-3">
-        'I Am A Black Father, It's Impossible to Prepare Your Kids For
-        Racism'
-      </h5>
-      <a href="">
-        <img
-          src="https://d.newsweek.com/en/full/1601757/racism-fathers-day-black-lives-matter-father.jpg?w=397&h=397&f=a558e40ae45f8c6df39831cfe21ce8f7"
-          alt="" class="img-full-width" />
-      </a>
-      <h5 class="section-title my-3">
-        'I Am A Black Father, It's Impossible to Prepare Your Kids For
-        Racism'
-      </h5>
-      <a href="">
-        <img
-          src="https://d.newsweek.com/en/full/1601757/racism-fathers-day-black-lives-matter-father.jpg?w=397&h=397&f=a558e40ae45f8c6df39831cfe21ce8f7"
-          alt="" class="img-full-width" />
-      </a>
-      <h5 class="section-title my-3">
-        'I Am A Black Father, It's Impossible to Prepare Your Kids For
-        Racism'
-      </h5>
-  
-      <!-- CULTURE & TRAVEL -->
-      <h5 class="section-title mt-4">CULTURE & TRAVEL</h5>
-      <div class="card border-0">
-        <a href="#" class="position-relative">
-          <img
-            src="https://d.newsweek.com/en/full/1601757/racism-fathers-day-black-lives-matter-father.jpg?w=397&h=397&f=a558e40ae45f8c6df39831cfe21ce8f7"
-            alt="" class="card-img-top" />
-          <small class="position-absolute py-1 px-1 culture">CORONAVIRUS</small>
-        </a>
-        <h5 class="section-title my-3">
-          'I Am A Black Father, It's Impossible to Prepare Your Kids For
-          Racism'
-        </h5>
-      </div>
-      <div class="card border-0">
-        <a href="#" class="position-relative">
-          <img
-            src="https://d.newsweek.com/en/full/1601757/racism-fathers-day-black-lives-matter-father.jpg?w=397&h=397&f=a558e40ae45f8c6df39831cfe21ce8f7"
-            alt="" class="card-img-top" />
-          <small class="position-absolute py-1 px-1 culture">CORONAVIRUS</small>
-        </a>
-        <h5 class="section-title my-3">
-          'I Am A Black Father, It's Impossible to Prepare Your Kids For
-          Racism'
-        </h5>
-      </div>
-      <div class="card border-0">
-        <a href="#" class="position-relative">
-          <img
-            src="https://d.newsweek.com/en/full/1601757/racism-fathers-day-black-lives-matter-father.jpg?w=397&h=397&f=a558e40ae45f8c6df39831cfe21ce8f7"
-            alt="" class="card-img-top" />
-          <small class="position-absolute py-1 px-1 culture">CORONAVIRUS</small>
-        </a>
-        <h5 class="section-title my-3">
-          'I Am A Black Father, It's Impossible to Prepare Your Kids For
-          Racism'
-        </h5>
-      </div>
-    </div>
-    <section class="magazine bg-white">
-      <h3 class="text-center">
-        <img src="./assets/img/newsweek-n-logo.png" alt="" width="35" /> IN
-        THE MAGAZINE
-      </h3>
-      <hr />
-      <div class="row">
-        <div class="col-md-3 mt-4">
-          <img class="img-full-width"
-            src="https://d.newsweek.com/en/full/1604706/cul-ps-beauvais.webp?w=466&h=311&l=52&t=29&q=90&f=e16503359619806ae393f097d88886a3"
-            alt="" />
-          <div class="magazine-capture">
-            <small class="bg-danger text-white">COVER</small>
-            <small class="text-danger">BUSINESS</small>
-          </div>
-          <h3 class="more-stories">
-            <a href="#">On Tiananmen Anniversary, Hong Kong Protesters Brace for
-              Chinese Crackdown</a>
-          </h3>
-        </div>
-        <div class="col-md-3 mt-4">
-          <img class="img-full-width"
-            src="https://d.newsweek.com/en/full/1604216/good-list-banner.webp?w=466&h=311&q=90&f=2062901c3efd89779019feae0efa97da"
-            alt="" />
-          <div class="magazine-capture">
-            <small class="bg-danger text-white">COVER</small>
-            <small class="text-danger">WORLD</small>
-          </div>
-          <h3 class="more-stories">
-            <a href="#">BLM Co-Founder: 'The Entire World Is Saying Black Lives Matter Now'</a>
-          </h3>
-        </div>
-        <div class="col-md-3 mt-4">
-          <img class="img-full-width"
-            src="https://d.newsweek.com/en/full/1603672/fe-blm-global-patrice-culler.webp?w=466&h=311&l=51&t=51&q=90&f=100b30ef6ea38176ffe7668da0050621"
-            alt="" />
-          <div class="magazine-capture">
-            <small class="bg-danger text-white">PERISCOPE</small>
-            <small class="text-danger">OPINION</small>
-          </div>
-          <h3 class="more-stories">
-            <a href="#">On Tiananmen Anniversary, Hong Kong Protesters Brace for
-              Chinese Crackdown</a>
-          </h3>
-        </div>
-        <div class="col-md-3 mt-4">
-          <img class="img-full-width"
-            src="https://d.newsweek.com/en/full/1606841/joel-schumacher.webp?w=466&h=311&l=38&t=47&q=90&f=80d7e02eeb699349e95fd281266ff38c"
-            alt="" />
-          <div class="magazine-capture">
-            <small class="bg-danger text-white">PERISCOPE</small>
-            <small class="text-danger">MY TURN</small>
-          </div>
-          <h3 class="more-stories">
-            <a href="#">Garcelle Beauvais Makes 'RHONY' History as First Black Cast Member</a>
-          </h3>
-        </div>
-        <div class="col-md-3 mt-4">
-          <img class="img-full-width"
-            src="https://d.newsweek.com/en/full/1596154/new-york-riots-protests-george-floyd.webp?w=767&h=512&q=90&f=0a8ee6f33e4a59f3fb299182e97ae110"
-            alt="" />
-          <div class="magazine-capture">
-            <small class="bg-danger text-white">COVER</small>
-            <small class="text-danger">WORLD</small>
-          </div>
-          <h3 class="more-stories">
-            <a href="#">On Tiananmen Anniversary, Hong Kong Protesters Brace for
-              Chinese Crackdown</a>
-          </h3>
-        </div>
-        <div class="col-md-3 mt-4">
-          <img class="img-full-width"
-            src="https://d.newsweek.com/en/full/1597714/cul-williemays-banner.webp?w=767&h=512&l=47&t=32&q=90&f=a29480bf3b4990127e1330949e0f9056"
-            alt="" />
-          <div class="magazine-capture">
-            <small class="bg-danger text-white">DOWNTIME</small>
-            <small class="text-danger">CULTURE</small>
-          </div>
-          <h3 class="more-stories">
-            <a href="#">Garcelle Beauvais Makes 'RHONY' History as First Black Cast Member</a>
-          </h3>
-        </div>
-        <div class="col-md-3 mt-4">
-          <img class="img-full-width"
-            src="https://d.newsweek.com/en/full/1597051/cul-ps-apatow.webp?w=767&h=512&l=46&t=41&q=90&f=1d5ac3f7d2e861180aed04ca6fa15f2d"
-            alt="" />
-          <div class="magazine-capture">
-            <small class="bg-danger text-white">COVER</small>
-            <small class="text-danger">WORLD</small>
-          </div>
-          <h3 class="more-stories">
-            <a href="#">Garcelle Beauvais Makes 'RHONY' History as First Black Cast Member</a>
-          </h3>
-        </div>
-        <div class="col-md-3 mt-4">
-          <img class="img-full-width"
-            src="https://d.newsweek.com/en/full/1601973/georgetown-u.webp?w=466&h=311&q=90&f=f41a002e0e811e68409a9ef490b86ec1"
-            alt="" />
-          <div class="magazine-capture">
-            <small class="bg-danger text-white">DOWNTIME</small>
-            <small class="text-danger">CULTURE</small>
-          </div>
-          <h3 class="more-stories">
-            <a href="#">On Tiananmen Anniversary, Hong Kong Protesters Brace for
-              Chinese Crackdown</a>
-          </h3>
-        </div>
-      </div>
-    </section>
-    <section class="editors-pick px-3 pt-4 bg-white">
-      <h3 class="text-center">
-        <img src="./assets/img/newsweek-n-logo.png" alt="" width="35" />
-        EDITOR'S PICK
-      </h3>
-      <hr class="py-1" />
-      <div class="row">
-        <div class="col-md-6 col-lg-3 mt-2">
-          <div class="card border-0">
-            <a href="#" class="position-relative">
-              <img
-                src="https://d.newsweek.com/en/full/1608828/florida-covid-19.webp?w=397&h=265&f=95739711fde4a62712314404ba6d62af"
-                alt="" class="card-img-top img-full-width" />
-              <small class="position-absolute py-1 px-1 editor">TECH & SCIENCE</small>
-            </a>
-            <h3 class="card-title mt-2">
-              <a href="">Sahara Dust Storm Tracker: Where Is the Plume Now and
-                What Is Its Path?</a>
-            </h3>
-            <p>
-              The latest record increase in virus cases trails more than one month of rising diagnosis numbers in Florida.
-            </p>
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-3 pt-3">
-          <div class="card border-0">
-            <a href="#" class="position-relative">
-              <img
-                src="https://d.newsweek.com/en/full/1602886/mark-zuckerberg.webp?w=767&h=512&f=47462a7788f535968aea0115315a58a5"
-                alt="" class="card-img-top img-full-width" />
-              <small class="position-absolute py-1 px-1 editor">TECH & SCIENCE</small>
-            </a>
-            <h3 class="card-title mt-2">
-              <a href="">Facebook Acts Faster on Hate Speech Than Twitter and
-                YouTube, Report Shows</a>
-            </h3>
-            <p>
-              "Best day ever!" exclaimed one Magic Kingdom attendee in the background of a video posted to the Blog Mickey
-              twitter
-              account.
-            </p>
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-3 pt-3">
-          <div class="card border-0">
-            <a href="#" class="position-relative">
-              <img
-                src="https://d.newsweek.com/en/full/1608784/seattle-police-department-chief-carmen-best.webp?w=397&h=265&f=23e0987e0f929e8d4df671e98eb08f21"
-                alt="" class="card-img-top img-full-width" />
-              <small class="position-absolute py-1 px-1 editor">NEWS</small>
-            </a>
-            <h3 class="card-title mt-2">
-              <a href="">Meghan Markle Most 'Misrepresented Woman in the World,'
-                Biography Says</a>
-            </h3>
-            <p>
-              "Best day ever!" exclaimed one Magic Kingdom attendee in the background of a video posted to the Blog Mickey
-              twitter
-              account.
-            </p>
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-3 pt-3">
-          <div class="card border-0">
-            <a href="#" class="position-relative">
-              <img
-                src="https://d.newsweek.com/en/full/1602842/brendon-urie.webp?w=767&h=512&f=854a33bde06a44d4e86906808e596c15"
-                alt="" class="card-img-top img-full-width" />
-              <small class="position-absolute py-1 px-1 editor">CULTURE</small>
-            </a>
-            <h3 class="card-title mt-2">
-              <a href="">Brendon Urie Tells Trump to Stop Playing Panic! At The
-                Disco at Rallies</a>
-            </h3>
-            <p>
-              Trump walked onto the stage at a campaign rally in Phoenix,
-              Arizona to one of Urie's bands' hit single, 'High Hopes.'
-            </p>
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-3 pt-3">
-          <div class="card border-0">
-            <a href="#" class="position-relative">
-              <img
-                src="https://d.newsweek.com/en/full/1602474/pompeo-bolton.webp?w=767&h=512&f=845b56272d513ede86118201b1535529"
-                alt="" class="card-img-top img-full-width" />
-              <small class="position-absolute py-1 px-1 editor">U.S.</small>
-            </a>
-            <h3 class="card-title mt-2">
-              <a href="">Pompeo Compares John Bolton to Edward Snowden, Who He
-                Wanted Executed</a>
-            </h3>
-            <p>
-              In 2013, Bolton told Fox News that Snowden "committed
-              treason" and "he ought to swing from a tall oak tree."
-            </p>
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-3 pt-3">
-          <div class="card border-0">
-            <a href="#" class="position-relative">
-              <img
-                src="https://d.newsweek.com/en/full/1602474/pompeo-bolton.webp?w=767&h=512&f=845b56272d513ede86118201b1535529"
-                alt="" class="card-img-top img-full-width" />
-              <small class="position-absolute py-1 px-1 editor">U.S.</small>
-            </a>
-            <h3 class="card-title mt-2">
-              <a href="">Pompeo Compares John Bolton to Edward Snowden, Who He
-                Wanted Executed</a>
-            </h3>
-            <p>
-              In 2013, Bolton told Fox News that Snowden "committed
-              treason" and "he ought to swing from a tall oak tree."
-            </p>
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-3 pt-3">
-          <div class="card border-0">
-            <a href="#" class="position-relative">
-              <img
-                src="https://d.newsweek.com/en/full/1602607/george-floyd-minneapolis-protest.webp?w=397&h=265&f=9053240cc083bd2340b6cc78bd7b1e6d"
-                alt="" class="card-img-top img-full-width" />
-              <small class="position-absolute py-1 px-1 editor">TECH & SCIENCE</small>
-            </a>
-            <h3 class="card-title mt-2">
-              <a href="">Facebook Acts Faster on Hate Speech Than Twitter and
-                YouTube, Report Shows</a>
-            </h3>
-            <p>
-              "While we recognize we have more to do, these results
-              suggest we are moving in the right direction and have
-              systems in place which continue to lead our industry," one
-              Facebook executive said.
-            </p>
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-3 pt-3">
-          <div class="card border-0">
-            <a href="#" class="position-relative">
-              <img
-                src="https://d.newsweek.com/en/full/1602436/millions-americans-still-missing-stimulus-checks.webp?w=397&h=265&f=6136772124121a689836a9590f06e14c"
-                alt="" class="card-img-top img-full-width" />
-              <small class="position-absolute py-1 px-1 editor">TECH & SCIENCE</small>
-            </a>
-            <h3 class="card-title mt-2">
-              <a href="">Facebook Acts Faster on Hate Speech Than Twitter and
-                YouTube, Report Shows</a>
-            </h3>
-            <p>
-              "While we recognize we have more to do, these results
-              suggest we are moving in the right direction and have
-              systems in place which continue to lead our industry," one
-              Facebook executive said.
-            </p>
-          </div>
-        </div>
-      </div>
-      <hr />
-    </section>
-    <section class="last-news px-3 bg-white">
-      <h4 class="us-header">U.S</h4>
+      <h4 class="us-header">SPORTS</h4>
       <div class="row">
         <div class="col-md-4 mt-3">
-          <img class="img-full-width"
+          <img
+            class="img-full-width"
             src="https://d.newsweek.com/en/full/1601477/washington-dc-george-floyd-protest-may-2020.webp?w=767&h=512&f=08bafa7cd32ce062e54225343e293224"
-            alt="">
+            alt=""
+          />
           <h3 class="card-title mt-2">
             <a href="">
-              Trump Demands End to Flag Burning as Protests Rage, Statues
-              Fall
+              Trump Demands End to Flag Burning as Protests Rage, Statues Fall
             </a>
           </h3>
         </div>
         <div class="col-md-4 mt-3">
-          <img class="img-full-width"
+          <img
+            class="img-full-width"
             src="https://d.newsweek.com/en/full/1601477/washington-dc-george-floyd-protest-may-2020.webp?w=767&h=512&f=08bafa7cd32ce062e54225343e293224"
-            alt="">
+            alt=""
+          />
           <h3 class="card-title mt-2">
             <a href="">
-              Trump Demands End to Flag Burning as Protests Rage, Statues
-              Fall
+              Trump Demands End to Flag Burning as Protests Rage, Statues Fall
             </a>
           </h3>
         </div>
         <div class="col-12 col-md-4">
           <div class="row segment-third pb-3">
-            <img src="https://d.newsweek.com/en/full/1598308/police.webp?w=397&h=265&f=cd65e0722007125e80ebae8f4db0196e"
-              alt="" class="segment-img" />
+            <img
+              src="https://d.newsweek.com/en/full/1598308/police.webp?w=397&h=265&f=cd65e0722007125e80ebae8f4db0196e"
+              alt=""
+              class="segment-img"
+            />
             <p class="segment-text highlight">
               Choke Holds Are Still Permitted at Two South Florida Police
               Departments
             </p>
           </div>
           <div class="row segment-third bod py-3">
-            <img src="https://d.newsweek.com/en/full/1598308/police.webp?w=397&h=265&f=cd65e0722007125e80ebae8f4db0196e"
-              alt="US image" class="segment-img" />
+            <img
+              src="https://d.newsweek.com/en/full/1598308/police.webp?w=397&h=265&f=cd65e0722007125e80ebae8f4db0196e"
+              alt="US image"
+              class="segment-img"
+            />
             <p class="segment-text highlight">
               Protesters Topple, Burn Christopher Columbus Statue Before Tossing
               in Lake
             </p>
           </div>
           <div class="row segment-third bod py-3">
-            <img src="https://d.newsweek.com/en/full/1598308/police.webp?w=397&h=265&f=cd65e0722007125e80ebae8f4db0196e"
-              alt="US image" class="segment-img" />
+            <img
+              src="https://d.newsweek.com/en/full/1598308/police.webp?w=397&h=265&f=cd65e0722007125e80ebae8f4db0196e"
+              alt="US image"
+              class="segment-img"
+            />
             <p class="segment-text highlight">
               California Teacher Threatens to Kill Protester and Daughter in
               Viral Video
@@ -1476,476 +2093,299 @@
           </div>
         </div>
       </div>
-    </section>
-    <h4 class="us-header">WORLD</h4>
-    <div class="row">
-      <div class="col-md-4 mt-3">
-        <img class="img-full-width"
-          src="https://d.newsweek.com/en/full/1601477/washington-dc-george-floyd-protest-may-2020.webp?w=767&h=512&f=08bafa7cd32ce062e54225343e293224"
-          alt="">
-        <h3 class="card-title mt-2">
-          <a href="">
-            Trump Demands End to Flag Burning as Protests Rage, Statues
-            Fall
-          </a>
-        </h3>
-      </div>
-      <div class="col-md-4 mt-3">
-        <img class="img-full-width"
-          src="https://d.newsweek.com/en/full/1601477/washington-dc-george-floyd-protest-may-2020.webp?w=767&h=512&f=08bafa7cd32ce062e54225343e293224"
-          alt="">
-        <h3 class="card-title mt-2">
-          <a href="">
-            Trump Demands End to Flag Burning as Protests Rage, Statues
-            Fall
-          </a>
-        </h3>
-      </div>
-      <div class="col-12 col-md-4">
-        <div class="row segment-third pb-3">
-          <img src="https://d.newsweek.com/en/full/1598308/police.webp?w=397&h=265&f=cd65e0722007125e80ebae8f4db0196e"
-            alt="" class="segment-img" />
-          <p class="segment-text highlight">
-            Choke Holds Are Still Permitted at Two South Florida Police
-            Departments
-          </p>
-        </div>
-        <div class="row segment-third bod py-3">
-          <img src="https://d.newsweek.com/en/full/1598308/police.webp?w=397&h=265&f=cd65e0722007125e80ebae8f4db0196e"
-            alt="US image" class="segment-img" />
-          <p class="segment-text highlight">
-            Protesters Topple, Burn Christopher Columbus Statue Before Tossing
-            in Lake
-          </p>
-        </div>
-        <div class="row segment-third bod py-3">
-          <img src="https://d.newsweek.com/en/full/1598308/police.webp?w=397&h=265&f=cd65e0722007125e80ebae8f4db0196e"
-            alt="US image" class="segment-img" />
-          <p class="segment-text highlight">
-            California Teacher Threatens to Kill Protester and Daughter in
-            Viral Video
-          </p>
-        </div>
-      </div>
-    </div>
-  
-    <h4 class="us-header">TECH & SCIENCE</h4>
-    <div class="row">
-      <div class="col-md-4 mt-3">
-        <img class="img-full-width"
-          src="https://d.newsweek.com/en/full/1601477/washington-dc-george-floyd-protest-may-2020.webp?w=767&h=512&f=08bafa7cd32ce062e54225343e293224"
-          alt="">
-        <h3 class="card-title mt-2">
-          <a href="">
-            Trump Demands End to Flag Burning as Protests Rage, Statues
-            Fall
-          </a>
-        </h3>
-      </div>
-      <div class="col-md-4 mt-3">
-        <img class="img-full-width"
-          src="https://d.newsweek.com/en/full/1601477/washington-dc-george-floyd-protest-may-2020.webp?w=767&h=512&f=08bafa7cd32ce062e54225343e293224"
-          alt="">
-        <h3 class="card-title mt-2">
-          <a href="">
-            Trump Demands End to Flag Burning as Protests Rage, Statues
-            Fall
-          </a>
-        </h3>
-      </div>
-      <div class="col-12 col-md-4">
-        <div class="row segment-third pb-3">
-          <img src="https://d.newsweek.com/en/full/1598308/police.webp?w=397&h=265&f=cd65e0722007125e80ebae8f4db0196e"
-            alt="" class="segment-img" />
-          <p class="segment-text highlight">
-            Choke Holds Are Still Permitted at Two South Florida Police
-            Departments
-          </p>
-        </div>
-        <div class="row segment-third bod py-3">
-          <img src="https://d.newsweek.com/en/full/1598308/police.webp?w=397&h=265&f=cd65e0722007125e80ebae8f4db0196e"
-            alt="US image" class="segment-img" />
-          <p class="segment-text highlight">
-            Protesters Topple, Burn Christopher Columbus Statue Before Tossing
-            in Lake
-          </p>
-        </div>
-        <div class="row segment-third bod py-3">
-          <img src="https://d.newsweek.com/en/full/1598308/police.webp?w=397&h=265&f=cd65e0722007125e80ebae8f4db0196e"
-            alt="US image" class="segment-img" />
-          <p class="segment-text highlight">
-            California Teacher Threatens to Kill Protester and Daughter in
-            Viral Video
-          </p>
-        </div>
-      </div>
-    </div>
-  
-    <h4 class="us-header">CULTURE</h4>
-    <div class="row">
-      <div class="col-md-4 mt-3">
-        <img class="img-full-width"
-          src="https://d.newsweek.com/en/full/1601477/washington-dc-george-floyd-protest-may-2020.webp?w=767&h=512&f=08bafa7cd32ce062e54225343e293224"
-          alt="">
-        <h3 class="card-title mt-2">
-          <a href="">
-            Trump Demands End to Flag Burning as Protests Rage, Statues
-            Fall
-          </a>
-        </h3>
-      </div>
-      <div class="col-md-4 mt-3">
-        <img class="img-full-width"
-          src="https://d.newsweek.com/en/full/1601477/washington-dc-george-floyd-protest-may-2020.webp?w=767&h=512&f=08bafa7cd32ce062e54225343e293224"
-          alt="">
-        <h3 class="card-title mt-2">
-          <a href="">
-            Trump Demands End to Flag Burning as Protests Rage, Statues
-            Fall
-          </a>
-        </h3>
-      </div>
-      <div class="col-12 col-md-4">
-        <div class="row segment-third pb-3">
-          <img src="https://d.newsweek.com/en/full/1598308/police.webp?w=397&h=265&f=cd65e0722007125e80ebae8f4db0196e"
-            alt="" class="segment-img" />
-          <p class="segment-text highlight">
-            Choke Holds Are Still Permitted at Two South Florida Police
-            Departments
-          </p>
-        </div>
-        <div class="row segment-third bod py-3">
-          <img src="https://d.newsweek.com/en/full/1598308/police.webp?w=397&h=265&f=cd65e0722007125e80ebae8f4db0196e"
-            alt="US image" class="segment-img" />
-          <p class="segment-text highlight">
-            Protesters Topple, Burn Christopher Columbus Statue Before Tossing
-            in Lake
-          </p>
-        </div>
-        <div class="row segment-third bod py-3">
-          <img src="https://d.newsweek.com/en/full/1598308/police.webp?w=397&h=265&f=cd65e0722007125e80ebae8f4db0196e"
-            alt="US image" class="segment-img" />
-          <p class="segment-text highlight">
-            California Teacher Threatens to Kill Protester and Daughter in
-            Viral Video
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
-  <h4 class="us-header">SPORTS</h4>
-  <div class="row">
-    <div class="col-md-4 mt-3">
-      <img class="img-full-width"
-        src="https://d.newsweek.com/en/full/1601477/washington-dc-george-floyd-protest-may-2020.webp?w=767&h=512&f=08bafa7cd32ce062e54225343e293224"
-        alt="">
-      <h3 class="card-title mt-2">
-        <a href="">
-          Trump Demands End to Flag Burning as Protests Rage, Statues
-          Fall
-        </a>
-      </h3>
-    </div>
-    <div class="col-md-4 mt-3">
-      <img class="img-full-width"
-        src="https://d.newsweek.com/en/full/1601477/washington-dc-george-floyd-protest-may-2020.webp?w=767&h=512&f=08bafa7cd32ce062e54225343e293224"
-        alt="">
-      <h3 class="card-title mt-2">
-        <a href="">
-          Trump Demands End to Flag Burning as Protests Rage, Statues
-          Fall
-        </a>
-      </h3>
-    </div>
-    <div class="col-12 col-md-4">
-      <div class="row segment-third pb-3">
-        <img src="https://d.newsweek.com/en/full/1598308/police.webp?w=397&h=265&f=cd65e0722007125e80ebae8f4db0196e"
-          alt="" class="segment-img" />
-        <p class="segment-text highlight">
-          Choke Holds Are Still Permitted at Two South Florida Police
-          Departments
-        </p>
-      </div>
-      <div class="row segment-third bod py-3">
-        <img src="https://d.newsweek.com/en/full/1598308/police.webp?w=397&h=265&f=cd65e0722007125e80ebae8f4db0196e"
-          alt="US image" class="segment-img" />
-        <p class="segment-text highlight">
-          Protesters Topple, Burn Christopher Columbus Statue Before Tossing
-          in Lake
-        </p>
-      </div>
-      <div class="row segment-third bod py-3">
-        <img src="https://d.newsweek.com/en/full/1598308/police.webp?w=397&h=265&f=cd65e0722007125e80ebae8f4db0196e"
-          alt="US image" class="segment-img" />
-        <p class="segment-text highlight">
-          California Teacher Threatens to Kill Protester and Daughter in
-          Viral Video
-        </p>
-      </div>
-    </div>
-  </div>
-  
-  <h4 class="us-header">BUSINESS</h4>
-  <div class="row">
-    <div class="col-md-4 mt-3">
-      <img class="img-full-width"
-        src="https://d.newsweek.com/en/full/1601477/washington-dc-george-floyd-protest-may-2020.webp?w=767&h=512&f=08bafa7cd32ce062e54225343e293224"
-        alt="">
-      <h3 class="card-title mt-2">
-        <a href="">
-          Trump Demands End to Flag Burning as Protests Rage, Statues
-          Fall
-        </a>
-      </h3>
-    </div>
-    <div class="col-md-4 mt-3">
-      <img class="img-full-width"
-        src="https://d.newsweek.com/en/full/1601477/washington-dc-george-floyd-protest-may-2020.webp?w=767&h=512&f=08bafa7cd32ce062e54225343e293224"
-        alt="">
-      <h3 class="card-title mt-2">
-        <a href="">
-          Trump Demands End to Flag Burning as Protests Rage, Statues
-          Fall
-        </a>
-      </h3>
-    </div>
-    <div class="col-12 col-md-4">
-      <div class="row segment-third pb-3">
-        <img src="https://d.newsweek.com/en/full/1598308/police.webp?w=397&h=265&f=cd65e0722007125e80ebae8f4db0196e"
-          alt="" class="segment-img" />
-        <p class="segment-text highlight">
-          Choke Holds Are Still Permitted at Two South Florida Police
-          Departments
-        </p>
-      </div>
-      <div class="row segment-third bod py-3">
-        <img src="https://d.newsweek.com/en/full/1598308/police.webp?w=397&h=265&f=cd65e0722007125e80ebae8f4db0196e"
-          alt="US image" class="segment-img" />
-        <p class="segment-text highlight">
-          Protesters Topple, Burn Christopher Columbus Statue Before Tossing
-          in Lake
-        </p>
-      </div>
-      <div class="row segment-third bod py-3">
-        <img src="https://d.newsweek.com/en/full/1598308/police.webp?w=397&h=265&f=cd65e0722007125e80ebae8f4db0196e"
-          alt="US image" class="segment-img" />
-        <p class="segment-text highlight">
-          California Teacher Threatens to Kill Protester and Daughter in
-          Viral Video
-        </p>
-      </div>
-    </div>
-  </div>
-   <div class="row px-3 d-md-none">
-      <!-- Subscribe -->
-      <section class="bg-white mt-3 col-12">
-        <div class="my-4">
-          <h4 class="subscribe-header text-uppercase">Subscribe</h4>
-          <div class="subscribe-main py-3 position-relative">
-            <div class="subscribe-content mx-auto">
-              <img class="position-relative subscribe-content-img"
-                src="https://d.newsweek.com/en/full/1597761/cover-june-19-26-2020.jpg?w=170&q=95&f=5fb0215ca8fd65a8cfe24229880661d4"
-                alt="" />
-            </div>
-            <p class="text-center subscribe-content-p1 position-absolute">
-              In-depth Stories You Don't See Elsewhere About Topics You
-              Want to Read!
-            </p>
-            <p class="text-center mx-auto subscribe-content-p2">
-              All Access + Weekly Delivery. Choose A Membership That's
-              Perfect for You!
-            </p>
-            <button class="d-flex justify-content-center btn btn-danger mx-auto">
-              SUBSCRIBE<i class="fa fa-chevron-right align-self-center pl-2"></i>
-            </button>
-          </div>
-        </div>
-      </section>
-      <!-- Newsletter -->
-      <section class="bg-white mt-3 col-12">
-        <div class="my-4">
-          <h4 class="newsletter-header text-uppercase">Newsletter</h4>
-          <div class="newsletter-main py-3 border">
-            <h6 class="text-center mx-auto newsletter-content-h6">
-              The Starting 5
-            </h6>
-            <p class="text-center newsletter-content-p">
-              See why nearly a quarter of a million subscribers begin
-              their day with the Starting 5.
-            </p>
-            <input class="d-flex justify-content-center mx-auto newsletter-content-input ml-3 mb-2 pl-2" type="email"
-              placeholder="Email address" />
-            <button class="d-flex justify-content-center btn btn-danger mx-auto newsletter-content-button">
-              FREE SIGNUP
-              <i class="fa fa-chevron-right align-self-center pl-2"></i>
-            </button>
-          </div>
-        </div>
-      </section>
-   </div> 
-  
-    <!-- Subscribe and Newsletter for medium screen and above -->
-    <section class="bg-white d-none d-md-block pb-lg-4">
-      <hr class="mt-4"/>
+
+      <h4 class="us-header">BUSINESS</h4>
       <div class="row">
-        <!-- subscribe -->
-        <div class="px-3 col-lg-7">
-          <h4 class="subscribe-header text-uppercase mt-4">Subscribe</h4>
-          <div class="row subscribe-main pt-4 pb-4 mx-1">
-            <div class="col-md-6">
-              <div class="subscribe-content1 ml-4 ml-lg-1">
-                <img class="position-relative subscribe-content-img"
+        <div class="col-md-4 mt-3">
+          <img
+            class="img-full-width"
+            src="https://d.newsweek.com/en/full/1601477/washington-dc-george-floyd-protest-may-2020.webp?w=767&h=512&f=08bafa7cd32ce062e54225343e293224"
+            alt=""
+          />
+          <h3 class="card-title mt-2">
+            <a href="">
+              Trump Demands End to Flag Burning as Protests Rage, Statues Fall
+            </a>
+          </h3>
+        </div>
+        <div class="col-md-4 mt-3">
+          <img
+            class="img-full-width"
+            src="https://d.newsweek.com/en/full/1601477/washington-dc-george-floyd-protest-may-2020.webp?w=767&h=512&f=08bafa7cd32ce062e54225343e293224"
+            alt=""
+          />
+          <h3 class="card-title mt-2">
+            <a href="">
+              Trump Demands End to Flag Burning as Protests Rage, Statues Fall
+            </a>
+          </h3>
+        </div>
+        <div class="col-12 col-md-4">
+          <div class="row segment-third pb-3">
+            <img
+              src="https://d.newsweek.com/en/full/1598308/police.webp?w=397&h=265&f=cd65e0722007125e80ebae8f4db0196e"
+              alt=""
+              class="segment-img"
+            />
+            <p class="segment-text highlight">
+              Choke Holds Are Still Permitted at Two South Florida Police
+              Departments
+            </p>
+          </div>
+          <div class="row segment-third bod py-3">
+            <img
+              src="https://d.newsweek.com/en/full/1598308/police.webp?w=397&h=265&f=cd65e0722007125e80ebae8f4db0196e"
+              alt="US image"
+              class="segment-img"
+            />
+            <p class="segment-text highlight">
+              Protesters Topple, Burn Christopher Columbus Statue Before Tossing
+              in Lake
+            </p>
+          </div>
+          <div class="row segment-third bod py-3">
+            <img
+              src="https://d.newsweek.com/en/full/1598308/police.webp?w=397&h=265&f=cd65e0722007125e80ebae8f4db0196e"
+              alt="US image"
+              class="segment-img"
+            />
+            <p class="segment-text highlight">
+              California Teacher Threatens to Kill Protester and Daughter in
+              Viral Video
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="row px-3 d-md-none">
+        <!-- Subscribe -->
+        <section class="bg-white mt-3 col-12">
+          <div class="my-4">
+            <h4 class="subscribe-header text-uppercase">Subscribe</h4>
+            <div class="subscribe-main py-3 position-relative">
+              <div class="subscribe-content mx-auto">
+                <img
+                  class="position-relative subscribe-content-img"
                   src="https://d.newsweek.com/en/full/1597761/cover-june-19-26-2020.jpg?w=170&q=95&f=5fb0215ca8fd65a8cfe24229880661d4"
-                  alt="" />
+                  alt=""
+                />
               </div>
-            </div>
-            <div class="col-md-6 mt-5 mt-lg-0 pl-lg-4">
-              <p class="subscribe-content-p3">
-                In-depth Stories You Don't See Elsewhere About Topics You
-                Want to Read!
+              <p class="text-center subscribe-content-p1 position-absolute">
+                In-depth Stories You Don't See Elsewhere About Topics You Want
+                to Read!
               </p>
-              <p class="newsletter-content-p2">
-                All Access + Weekly Delivery. Choose A Membership That's
-                Perfect for You!
+              <p class="text-center mx-auto subscribe-content-p2">
+                All Access + Weekly Delivery. Choose A Membership That's Perfect
+                for You!
               </p>
-              <button class="d-flex btn btn-danger">
-                SUBSCRIBE<i class="fa fa-chevron-right align-self-center pl-2"></i>
+              <button
+                class="d-flex justify-content-center btn btn-danger mx-auto"
+              >
+                SUBSCRIBE
+                <i class="fa fa-chevron-right align-self-center pl-2"></i>
               </button>
             </div>
           </div>
-        </div>
+        </section>
         <!-- Newsletter -->
-        <div class="px-3 col-lg-5">
-          <h4 class="newsletter-header text-uppercase mt-4">
-            Newsletter
-          </h4>
-          <div class="card mb-3 newsletter-lg">
-            <div class="row no-gutters height-100">
-              <div class="col-md-3 col-lg-5">
-                <img src="https://d.newsweek.com/en/full/1541302/starting5-homepage.png"
-                  class="img-full-width img-full-height" alt="..." />
+        <section class="bg-white mt-3 col-12">
+          <div class="my-4">
+            <h4 class="newsletter-header text-uppercase">Newsletter</h4>
+            <div class="newsletter-main py-3 border">
+              <h6 class="text-center mx-auto newsletter-content-h6">
+                The Starting 5
+              </h6>
+              <p class="text-center newsletter-content-p">
+                See why nearly a quarter of a million subscribers begin their
+                day with the Starting 5.
+              </p>
+              <input
+                class="d-flex justify-content-center mx-auto newsletter-content-input ml-3 mb-2 pl-2"
+                type="email"
+                placeholder="Email address"
+              />
+              <button
+                class="d-flex justify-content-center btn btn-danger mx-auto newsletter-content-button"
+              >
+                FREE SIGNUP
+                <i class="fa fa-chevron-right align-self-center pl-2"></i>
+              </button>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <!-- Subscribe and Newsletter for medium screen and above -->
+      <section class="bg-white d-none d-md-block pb-lg-4">
+        <hr class="mt-4" />
+        <div class="row">
+          <!-- subscribe -->
+          <div class="px-3 col-lg-7">
+            <h4 class="subscribe-header text-uppercase mt-4">Subscribe</h4>
+            <div class="row subscribe-main pt-4 pb-4 mx-1">
+              <div class="col-md-6">
+                <div class="subscribe-content1 ml-4 ml-lg-1">
+                  <img
+                    class="position-relative subscribe-content-img"
+                    src="https://d.newsweek.com/en/full/1597761/cover-june-19-26-2020.jpg?w=170&q=95&f=5fb0215ca8fd65a8cfe24229880661d4"
+                    alt=""
+                  />
+                </div>
               </div>
-              <div class="col-md-9 col-lg-7">
-                <div class="card-body">
-                  <h6 class="newsletter-content-h6">The Starting 5</h6>
-                  <p class="newsletter-content-p">
-                    See why nearly a quarter of a million subscribers
-                    begin their day with the Starting 5.
-                  </p>
-                  <input class="newsletter-content-input mb-2 pl-2" type="email" placeholder="Email address" />
-                  <button class="d-flex justify-content-center btn btn-danger newsletter-content-button">
-                    SUBSCRIBE<i class="fa fa-chevron-right align-self-center pl-2"></i>
-                  </button>
+              <div class="col-md-6 mt-5 mt-lg-0 pl-lg-4">
+                <p class="subscribe-content-p3">
+                  In-depth Stories You Don't See Elsewhere About Topics You Want
+                  to Read!
+                </p>
+                <p class="newsletter-content-p2">
+                  All Access + Weekly Delivery. Choose A Membership That's
+                  Perfect for You!
+                </p>
+                <button class="d-flex btn btn-danger">
+                  SUBSCRIBE
+                  <i class="fa fa-chevron-right align-self-center pl-2"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- Newsletter -->
+          <div class="px-3 col-lg-5">
+            <h4 class="newsletter-header text-uppercase mt-4">
+              Newsletter
+            </h4>
+            <div class="card mb-3 newsletter-lg">
+              <div class="row no-gutters height-100">
+                <div class="col-md-3 col-lg-5">
+                  <img
+                    src="https://d.newsweek.com/en/full/1541302/starting5-homepage.png"
+                    class="img-full-width img-full-height"
+                    alt="..."
+                  />
+                </div>
+                <div class="col-md-9 col-lg-7">
+                  <div class="card-body">
+                    <h6 class="newsletter-content-h6">The Starting 5</h6>
+                    <p class="newsletter-content-p">
+                      See why nearly a quarter of a million subscribers begin
+                      their day with the Starting 5.
+                    </p>
+                    <input
+                      class="newsletter-content-input mb-2 pl-2"
+                      type="email"
+                      placeholder="Email address"
+                    />
+                    <button
+                      class="d-flex justify-content-center btn btn-danger newsletter-content-button"
+                    >
+                      SUBSCRIBE
+                      <i class="fa fa-chevron-right align-self-center pl-2"></i>
+                    </button>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-      <hr class="mt-5 d-none d-lg-block" />
-    </section>
-  
-</main>
+        <hr class="mt-5 d-none d-lg-block" />
+      </section>
+    </main>
 
-  
-  <hr class="mt-4 d-none d-md-block d-lg-none" />
-  <footer class="bg-white mt-3 mt-lg-0 row mx-lg-0">
-    <div class="my-4 mt-lg-0">
-      <div class="d-md-flex justify-content-md-between">
-        <div class="d-md-flex">
-          <h3 class="mr-2 footer-header mt-3">Newsweek</h3>
-          <small class="footer-grey align-self-md-end">&copy; 2020 NEWSWEEK</small>
+    <hr class="mt-4 d-none d-md-block d-lg-none" />
+    <footer class="bg-white mt-3 mt-lg-0 row mx-lg-0">
+      <div class="my-4 mt-lg-0">
+        <div class="d-md-flex justify-content-md-between">
+          <div class="d-md-flex">
+            <h3 class="mr-2 footer-header mt-3">Newsweek</h3>
+            <small class="footer-grey align-self-md-end">
+              &copy; 2020 NEWSWEEK
+            </small>
+          </div>
+          <div class="footer-grey align-self-md-end">
+            <span>
+              <i class="p-2 fab fa-lg fa-facebook-square"></i>
+            </span>
+            <span>
+              <i class="p-2 fab fa-lg fa-twitter"></i>
+            </span>
+            <span>
+              <i class="p-2 fab fa-lg fa-instagram"></i>
+            </span>
+            <span>
+              <i class="p-2 fab fa-lg fa-tumblr"></i>
+            </span>
+            <span>
+              <i class="p-2 fab fa-lg fa-linkedin-in"></i>
+            </span>
+          </div>
         </div>
-        <div class="footer-grey align-self-md-end">
-          <span>
-            <i class="p-2 fab fa-lg fa-facebook-square"></i>
-          </span>
-          <span>
-            <i class="p-2 fab fa-lg fa-twitter"></i>
-          </span>
-          <span>
-            <i class="p-2 fab fa-lg fa-instagram"></i>
-          </span>
-          <span>
-            <i class="p-2 fab fa-lg fa-tumblr"></i>
-          </span>
-          <span>
-            <i class="p-2 fab fa-lg fa-linkedin-in"></i>
-          </span>
+        <hr class="my-2" />
+        <div class="footer-links">
+          <ul class="d-flex flex-wrap mb-0">
+            <li class="px-2">
+              <a href="#" class="font-weight-bold footer-link">Editions:</a>
+            </li>
+            <li class="px-2">
+              <a href="#" class="footer-link">U.S Edition</a>
+            </li>
+            <li class="footer-grey d-none d-md-block">&verbar;</li>
+            <li class="px-2"><a href="#" class="footer-link">日本</a></li>
+            <li class="footer-grey d-none d-md-block">&verbar;</li>
+            <li class="px-2"><a href="#" class="footer-link">Pakistan</a></li>
+            <li class="footer-grey d-none d-md-block">&verbar;</li>
+            <li class="px-2"><a href="#" class="footer-link">Polska</a></li>
+            <li class="footer-grey d-none d-md-block">&verbar;</li>
+            <li class="px-2"><a href="#" class="footer-link">România</a></li>
+          </ul>
+          <ul class="d-flex flex-wrap">
+            <li class="px-2"><a href="#" class="footer-link">About Us</a></li>
+            <li class="footer-grey d-none d-md-block">&verbar;</li>
+            <li class="px-2">
+              <a href="#" class="footer-link">Corrections</a>
+            </li>
+            <li class="footer-grey d-none d-md-block">&verbar;</li>
+            <li class="px-2">
+              <a href="#" class="footer-link">Contact Us</a>
+            </li>
+            <li class="footer-grey d-none d-md-block">&verbar;</li>
+            <li class="px-2">
+              <a href="#" class="footer-link">Editorial Guildlines</a>
+            </li>
+            <li class="footer-grey d-none d-md-block">&verbar;</li>
+            <li class="px-2">
+              <a href="#" class="footer-link">Advertise</a>
+            </li>
+            <li class="footer-grey d-none d-md-block">&verbar;</li>
+            <li class="px-2">
+              <a href="#" class="footer-link">Copyright</a>
+            </li>
+            <li class="footer-grey d-none d-md-block">&verbar;</li>
+            <li class="px-2">
+              <a href="#" class="footer-link">Terms & Conditions</a>
+            </li>
+            <li class="footer-grey d-none d-md-block">&verbar;</li>
+            <li class="px-2">
+              <a href="#" class="footer-link">Privacy Policy</a>
+            </li>
+            <li class="footer-grey d-none d-md-block">&verbar;</li>
+            <li class="px-2">
+              <a href="#" class="footer-link">Cookie Policy</a>
+            </li>
+            <li class="footer-grey d-none d-md-block">&verbar;</li>
+            <li class="px-2">
+              <a href="#" class="footer-link">Terms of Sale</a>
+            </li>
+            <li class="footer-grey d-none d-md-block">&verbar;</li>
+            <li class="px-2"><a href="#" class="footer-link">Archive</a></li>
+            <li class="footer-grey d-none d-md-block">&verbar;</li>
+            <li class="px-2">
+              <a href="#" class="footer-link">Announcements</a>
+            </li>
+            <li class="footer-grey d-none d-md-block">&verbar;</li>
+            <li class="px-2">
+              <a href="#" class="footer-link">Consent Preferences</a>
+            </li>
+          </ul>
         </div>
       </div>
-      <hr class="my-2" />
-      <div class="footer-links">
-        <ul class="d-flex flex-wrap mb-0">
-          <li class="px-2">
-            <a href="#" class="font-weight-bold footer-link">Editions:</a>
-          </li>
-          <li class="px-2">
-            <a href="#" class="footer-link">U.S Edition</a>
-          </li>
-          <li class="footer-grey d-none d-md-block">&verbar;</li>
-          <li class="px-2"><a href="#" class="footer-link">日本</a></li>
-          <li class="footer-grey d-none d-md-block">&verbar;</li>
-          <li class="px-2"><a href="#" class="footer-link">Pakistan</a></li>
-          <li class="footer-grey d-none d-md-block">&verbar;</li>
-          <li class="px-2"><a href="#" class="footer-link">Polska</a></li>
-          <li class="footer-grey d-none d-md-block">&verbar;</li>
-          <li class="px-2"><a href="#" class="footer-link">România</a></li>
-        </ul>
-        <ul class="d-flex flex-wrap">
-          <li class="px-2"><a href="#" class="footer-link">About Us</a></li>
-          <li class="footer-grey d-none d-md-block">&verbar;</li>
-          <li class="px-2">
-            <a href="#" class="footer-link">Corrections</a>
-          </li>
-          <li class="footer-grey d-none d-md-block">&verbar;</li>
-          <li class="px-2">
-            <a href="#" class="footer-link">Contact Us</a>
-          </li>
-          <li class="footer-grey d-none d-md-block">&verbar;</li>
-          <li class="px-2">
-            <a href="#" class="footer-link">Editorial Guildlines</a>
-          </li>
-          <li class="footer-grey d-none d-md-block">&verbar;</li>
-          <li class="px-2">
-            <a href="#" class="footer-link">Advertise</a>
-          </li>
-          <li class="footer-grey d-none d-md-block">&verbar;</li>
-          <li class="px-2">
-            <a href="#" class="footer-link">Copyright</a>
-          </li>
-          <li class="footer-grey d-none d-md-block">&verbar;</li>
-          <li class="px-2">
-            <a href="#" class="footer-link">Terms & Conditions</a>
-          </li>
-          <li class="footer-grey d-none d-md-block">&verbar;</li>
-          <li class="px-2">
-            <a href="#" class="footer-link">Privacy Policy</a>
-          </li>
-          <li class="footer-grey d-none d-md-block">&verbar;</li>
-          <li class="px-2">
-            <a href="#" class="footer-link">Cookie Policy</a>
-          </li>
-          <li class="footer-grey d-none d-md-block">&verbar;</li>
-          <li class="px-2">
-            <a href="#" class="footer-link">Terms of Sale</a>
-          </li>
-          <li class="footer-grey d-none d-md-block">&verbar;</li>
-          <li class="px-2"><a href="#" class="footer-link">Archive</a></li>
-          <li class="footer-grey d-none d-md-block">&verbar;</li>
-          <li class="px-2">
-            <a href="#" class="footer-link">Announcements</a>
-          </li>
-          <li class="footer-grey d-none d-md-block">&verbar;</li>
-          <li class="px-2">
-            <a href="#" class="footer-link">Consent Preferences</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </footer>
-  
-</body>
-
-
+    </footer>
+  </body>
 </html>
