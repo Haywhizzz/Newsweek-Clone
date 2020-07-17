@@ -9,6 +9,7 @@ body {
   font-family: 'Roboto Condensed', sans-serif;
   background-color: #f4f5f6;
   overflow-x: hidden;
+  
 }
 
 .navbar {
@@ -430,6 +431,7 @@ small {
   width: 236px;
   fill: red;
   height: 35px;
+  margin: 10px;
 }
 
 .footer-link {
@@ -472,11 +474,6 @@ body p,
 }
 
 @media screen and (min-width: 992px) {
-  main,
-  footer {
-    padding: 0 1em;
-  }
-
   nav,
   .second-nav {
     width: 97.5%;
